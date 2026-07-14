@@ -26,7 +26,15 @@
   .rank .head .left{display:flex;align-items:center;gap:12px}
   .rank .head .num{font-size:24px;font-weight:800;opacity:.85}
   .rank .head .name{font-size:19px;font-weight:800}
-  .rank .head .price{font-size:15px;font-weight:800;background:rgba(0,0,0,.3);padding:5px 13px;border-radius:20px;white-space:nowrap}
+  .rank .head .price{font-size:14px;font-weight:800;background:rgba(0,0,0,.3);padding:5px 13px;border-radius:20px;white-space:nowrap}
+  .tiers{padding:14px 22px 4px;border-bottom:1px solid var(--line)}
+  .tier{display:flex;gap:12px;align-items:baseline;padding:7px 12px;border-radius:8px;margin-bottom:6px;font-size:14px;background:rgba(255,255,255,.02);border:1px solid var(--line)}
+  .tier.best{background:rgba(63,185,80,.1);border-color:rgba(63,185,80,.4)}
+  .tier .tp{font-weight:800;color:#fff;min-width:150px}
+  .tier .tp .amt{color:var(--pink2)}
+  .tier .tw{color:var(--mut)}
+  .tier.best .tw{color:#cfe6d4}
+  .tier .badge{font-size:10.5px;font-weight:800;color:#7ee787;text-transform:uppercase;letter-spacing:.05em;margin-left:6px}
   .h1c{background:linear-gradient(90deg,#7a2d52,#db61a2)}
   .h2c{background:linear-gradient(90deg,#7a2d52,#c559a0)}
   .h3c{background:linear-gradient(90deg,#5f2742,#a94b85)}
@@ -90,7 +98,12 @@
   <div class="rank">
     <div class="head h1c">
       <div class="left"><span class="num">#1</span><span class="name">EIN Presswire — Best value + speed</span></div>
-      <span class="price">$149 single · $99.80/ea (5) · $66.60/ea (15)</span>
+      <span class="price">from $149</span>
+    </div>
+    <div class="tiers">
+      <div class="tier best"><div class="tp"><span class="amt">$149</span> · Basic<span class="badge">Pick this</span></div><div class="tw">1 release, up to 700 words + 1 image + 1 video. Full distribution incl. AP News.</div></div>
+      <div class="tier"><div class="tp"><span class="amt">$499</span> · Pro+ (5 pack)</div><div class="tw">5 releases ($99.80 each), up to 1,000 words each.</div></div>
+      <div class="tier"><div class="tp"><span class="amt">$999</span> · Corporate (15 pack)</div><div class="tw">15 releases ($66.60 each), up to 2,500 words each.</div></div>
     </div>
     <div class="scores">
       <div class="score"><div class="lab">Prestige</div><div class="val">Medium-High</div><div class="bar"><i class="b-pink" style="width:65%"></i></div></div>
@@ -101,7 +114,6 @@
     </div>
     <div class="body">
       <table class="facts">
-        <tr><td>Price includes</td><td>1 release · up to <b>700 words</b> + 1 image + 1 video · AP News placement · indefinite hosting · full clickable report. (Pro+ $499/5 → 1,000 words; Corporate $999/15 → 2,500 words.)</td></tr>
         <tr><td>How soon live</td><td><span class="chip c-fast">Same day / within hours</span> &nbsp;Google News in ~15 min. First-time account verification up to 2 business days — start now.</td></tr>
         <tr><td>Approval</td><td>Free account → paste release → ~2h editorial review (business hrs ET) → distributed → report emailed 2–4h later.</td></tr>
       </table>
@@ -135,7 +147,13 @@
   <div class="rank">
     <div class="head h2c">
       <div class="left"><span class="num">#2</span><span class="name">BrandPush — Best for the "As-Seen-On" logos</span></div>
-      <span class="price">Popular $265 · Authority $595 · Ultimate $795</span>
+      <span class="price">from $195</span>
+    </div>
+    <div class="tiers">
+      <div class="tier"><div class="tp"><span class="amt">$195</span> · Limited</div><div class="tw">200+ sites, no major outlets, no Google News. For restricted topics only.</div></div>
+      <div class="tier best"><div class="tp"><span class="amt">$265</span> · Popular<span class="badge">Best value</span></div><div class="tw">300+ sites + Google News + Benzinga. But NO AP or Business Insider.</div></div>
+      <div class="tier"><div class="tp"><span class="amt">$595</span> · Authority</div><div class="tw">The 6-outlet logo wall: AP, Business Insider, Newsmax, AsiaOne, Street Insider, MSN.</div></div>
+      <div class="tier"><div class="tp"><span class="amt">$795</span> · Ultimate</div><div class="tw">450+ sites — widest reach, combines Popular + Authority names.</div></div>
     </div>
     <div class="scores">
       <div class="score"><div class="lab">Prestige</div><div class="val">Medium (affiliate)</div><div class="bar"><i class="b-pink" style="width:55%"></i></div></div>
@@ -146,7 +164,7 @@
     </div>
     <div class="body">
       <table class="facts">
-        <tr><td>Price includes</td><td><b>Popular $265:</b> 300+ sites · <b>350–800 words</b> · Google News · live-URL report + "As Seen On" badge. Writing add-on $40–80.</td></tr>
+        <tr><td>Article length</td><td><b>350–800 words</b> · writing add-on $40–80 · live-URL report + "As Seen On" badge.</td></tr>
         <tr><td>How soon live</td><td><span class="chip c-slow">2–7 business days</span> &nbsp;No same-day. No weekends. Yahoo add-on +4 days.</td></tr>
         <tr><td>Approval</td><td>Order + upload → BrandPush team publishes across network → verifies live pages → sends full URL report.</td></tr>
       </table>
@@ -197,7 +215,13 @@
   <div class="rank">
     <div class="head h3c">
       <div class="left"><span class="num">#3</span><span class="name">Accesswire — Best genuine AP + financial prestige</span></div>
-      <span class="price">Online $175 · Budget $415 · National $775 · Premium $1,095</span>
+      <span class="price">from $175</span>
+    </div>
+    <div class="tiers">
+      <div class="tier"><div class="tp"><span class="amt">$175</span> · Online Only</div><div class="tw">Basic online distribution + Accesswire newsroom. No AP, for private companies.</div></div>
+      <div class="tier"><div class="tp"><span class="amt">$415</span> · Budget</div><div class="tw">Wider online outlets, still no AP wire.</div></div>
+      <div class="tier best"><div class="tp"><span class="amt">$775</span> · National<span class="badge">Pick this for AP</span></div><div class="tw">Genuine AP + Yahoo Finance + Bloomberg + Morningstar + Nasdaq. Unlimited words.</div></div>
+      <div class="tier"><div class="tp"><span class="amt">$1,095</span> · Premium</div><div class="tw">Everything in National + Business Insider + AP Mobile + specialty circuits.</div></div>
     </div>
     <div class="scores">
       <div class="score"><div class="lab">Prestige</div><div class="val">High</div><div class="bar"><i class="b-pink" style="width:82%"></i></div></div>
@@ -208,7 +232,7 @@
     </div>
     <div class="body">
       <table class="facts">
-        <tr><td>Price includes</td><td><b>National $775:</b> <b>unlimited words + images</b> (no overage fees) · free YouTube/social embeds · AP distribution · financial terminals · analytics report.</td></tr>
+        <tr><td>Article length</td><td><b>Unlimited words + images</b> — no overage fees. Free YouTube/social embeds. Analytics report.</td></tr>
         <tr><td>How soon live</td><td><span class="chip c-fast">Submission ~30 min</span> &nbsp;Report populates within ~24h.</td></tr>
         <tr><td>Approval</td><td>Account → submit (unlimited length) → editorial pass → AP + outlet distribution → analytics report.</td></tr>
       </table>
@@ -241,7 +265,12 @@
   <div class="rank">
     <div class="head h4c">
       <div class="left"><span class="num">#4</span><span class="name">Business Wire / PR Newswire / GlobeNewswire — Max prestige</span></div>
-      <span class="price">$760–2,500+ (BW) · $805+$195/yr (PRN) · $350→1,200 (Globe)</span>
+      <span class="price">from $805</span>
+    </div>
+    <div class="tiers">
+      <div class="tier"><div class="tp"><span class="amt">$350→$1,200</span> · GlobeNewswire</div><div class="tw">Cheapest flagship route. Base ~$350, typical national reach $900–1,200.</div></div>
+      <div class="tier"><div class="tp"><span class="amt">$805</span> + $195/yr · PR Newswire</div><div class="tw">National wire + AP. Requires $195/yr membership. +$245 per extra 100 words.</div></div>
+      <div class="tier"><div class="tp"><span class="amt">$760–$2,500+</span> · Business Wire</div><div class="tw">Highest prestige. 400 words base, +$195 per extra 100 words. Images ~$425.</div></div>
     </div>
     <div class="scores">
       <div class="score"><div class="lab">Prestige</div><div class="val">Highest</div><div class="bar"><i class="b-pink" style="width:100%"></i></div></div>
@@ -252,7 +281,7 @@
     </div>
     <div class="body">
       <table class="facts">
-        <tr><td>Price includes</td><td><b>400 words base</b>, then +$195/100 words (BW) / +$245/100 (PRN). Image hosting a paid add-on (~$425 first image, BW). Loaded releases hit $2,000–3,800.</td></tr>
+        <tr><td>Watch out</td><td>Word overages and image hosting add up fast — loaded releases hit $2,000–3,800.</td></tr>
         <tr><td>How soon live</td><td><span class="chip c-slow">1–3 business days</span></td></tr>
         <tr><td>Approval</td><td>Quote/contract → submit → editorial + compliance review → wire distribution. PRN needs $195/yr membership first.</td></tr>
       </table>
