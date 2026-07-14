@@ -14,45 +14,55 @@
   .nav{margin:0 0 20px}
   .nav a{display:inline-block;padding:8px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;margin-right:8px;border:1px solid var(--line);color:var(--tx)}
   .nav a.active{background:var(--pink);border-color:var(--pink);color:#fff}
-
   .urgent{background:rgba(248,81,73,.1);border:1px solid var(--red);border-left:4px solid var(--red);border-radius:8px;padding:12px 16px;margin:0 0 18px;font-size:14px}
   .urgent b{color:#ffb3ae}
   .legend{background:var(--pinkbg);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:0 0 22px;font-size:13px;color:var(--mut)}
   .legend b{color:var(--pink2)}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:middle;margin-right:4px}
+  .d-green{background:var(--green)} .d-aff{background:#8a6b7d}
 
-  .rank{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 20px;overflow:hidden}
-  .rank .head{padding:14px 20px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+  .rank{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 22px;overflow:hidden}
+  .rank .head{padding:16px 22px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
   .rank .head .left{display:flex;align-items:center;gap:12px}
-  .rank .head .num{font-size:22px;font-weight:800;opacity:.85}
-  .rank .head .name{font-size:18px;font-weight:800}
-  .rank .head .price{font-size:15px;font-weight:800;background:rgba(0,0,0,.3);padding:4px 12px;border-radius:20px;white-space:nowrap}
+  .rank .head .num{font-size:24px;font-weight:800;opacity:.85}
+  .rank .head .name{font-size:19px;font-weight:800}
+  .rank .head .price{font-size:15px;font-weight:800;background:rgba(0,0,0,.3);padding:5px 13px;border-radius:20px;white-space:nowrap}
   .h1c{background:linear-gradient(90deg,#7a2d52,#db61a2)}
   .h2c{background:linear-gradient(90deg,#7a2d52,#c559a0)}
   .h3c{background:linear-gradient(90deg,#5f2742,#a94b85)}
   .h4c{background:linear-gradient(90deg,#4a2038,#8a3f6d)}
 
-  .scores{display:flex;gap:8px;flex-wrap:wrap;padding:12px 20px;border-bottom:1px solid var(--line);background:rgba(219,97,162,.05)}
-  .score{flex:1;min-width:120px}
+  .scores{display:flex;gap:8px;flex-wrap:wrap;padding:14px 22px;border-bottom:1px solid var(--line);background:rgba(219,97,162,.05)}
+  .score{flex:1;min-width:110px}
   .score .lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);margin-bottom:3px}
   .score .val{font-size:14px;font-weight:700;color:#fff}
   .bar{height:6px;border-radius:3px;background:rgba(255,255,255,.1);margin-top:4px;overflow:hidden}
   .bar i{display:block;height:100%;border-radius:3px}
   .b-pink{background:var(--pink2)} .b-teal{background:var(--teal)} .b-green{background:var(--green)} .b-amber{background:var(--amber)}
 
-  table.d{width:100%;border-collapse:collapse;font-size:14px}
-  table.d td{padding:10px 20px;border-bottom:1px solid var(--line);vertical-align:top}
-  table.d tr:last-child td{border-bottom:none}
-  table.d td:first-child{color:var(--pink2);width:26%;font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.04em}
-  .grp{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);margin:8px 0 4px;font-weight:700}
-  .grp:first-child{margin-top:0}
-  .chan{display:inline-block;background:rgba(219,97,162,.14);color:#f0a8ce;border:1px solid rgba(219,97,162,.3);font-size:12px;padding:3px 9px;border-radius:6px;margin:2px 5px 2px 0}
-  .chan.flag{background:rgba(63,185,80,.15);color:#7ee787;border-color:rgba(63,185,80,.35)}
-  .chan.aff{opacity:.7}
+  .body{padding:6px 22px 18px}
+  .facts{width:100%;border-collapse:collapse;font-size:14px;margin-bottom:8px}
+  .facts td{padding:9px 0;border-bottom:1px solid var(--line);vertical-align:top}
+  .facts td:first-child{color:var(--pink2);width:150px;font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.04em;padding-right:16px}
   .chip{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:12px}
   .c-fast{background:rgba(57,197,207,.18);color:var(--teal)}
   .c-slow{background:rgba(227,169,44,.18);color:var(--amber)}
-  .verdict{color:#fff}
+
+  .outlets{margin-top:14px}
+  .otitle{font-size:13px;font-weight:800;color:#fff;margin:14px 0 8px}
+  .olist{font-size:15px;line-height:2;color:var(--tx)}
+  .o{display:inline-block;padding:2px 4px;margin:0 2px}
+  .o.g{color:#7ee787;font-weight:600}
+  .o.g::before{content:"● ";color:var(--green);font-size:11px}
+  .o.a{color:#d9b8ce}
+  .o.a::before{content:"○ ";color:#8a6b7d;font-size:11px}
+  .sep{color:var(--line)}
+  .not{color:#ffb3ae;font-size:13.5px;margin-top:10px;background:rgba(248,81,73,.08);border-left:3px solid var(--red);padding:8px 12px;border-radius:0 6px 6px 0}
+  .verdict{color:#fff;background:rgba(219,97,162,.1);border-left:3px solid var(--pink);padding:10px 14px;border-radius:0 8px 8px 0;margin-top:14px;font-size:14px}
   h3.sec{font-size:16px;margin:28px 0 10px;border-bottom:1px solid var(--line);padding-bottom:6px;color:var(--pink2)}
+  .summary{width:100%;border-collapse:collapse;font-size:14px}
+  .summary td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  .summary tr:first-child td{color:var(--pink2);font-weight:700}
   .fine{color:var(--mut);font-size:12.5px;margin-top:18px;line-height:1.6}
   a.src{color:var(--pink2)}
 </style>
@@ -70,9 +80,10 @@
   </div>
 
   <div class="legend">
-    <b>How to read the outlet tags:</b>
-    <span class="chan flag" style="border:none">Green = genuine flagship</span> placement on the outlet's real site ·
-    <span class="chan aff" style="border:none">Faded = affiliate/network</span> page that carries the brand but isn't the main newsroom. This is the key thing for the CEO. All names below are <b>online publications</b> — TV/radio excluded. "Validity NOW" = odds it actually appears on your timeline (guaranteed-publish services are money-back, so ~100% on outlets they control).
+    <b>The outlet lists below are fully spelled out.</b> &nbsp;
+    <span class="dot d-green"></span><b style="color:#7ee787">Green ●</b> = genuine flagship placement on the outlet's real site. &nbsp;
+    <span class="dot d-aff"></span><span style="color:#d9b8ce">Faded ○</span> = affiliate / network page carrying the brand, not the main newsroom. &nbsp;
+    All names are <b>online publications</b> (TV/radio excluded).
   </div>
 
   <!-- ===================== RANK 1 : EIN ===================== -->
@@ -84,28 +95,40 @@
     <div class="scores">
       <div class="score"><div class="lab">Prestige</div><div class="val">Medium-High</div><div class="bar"><i class="b-pink" style="width:65%"></i></div></div>
       <div class="score"><div class="lab">Exposure</div><div class="val">Wide (online)</div><div class="bar"><i class="b-pink" style="width:80%"></i></div></div>
-      <div class="score"><div class="lab">Validity NOW</div><div class="val">~100% guaranteed</div><div class="bar"><i class="b-green" style="width:100%"></i></div></div>
+      <div class="score"><div class="lab">Validity NOW</div><div class="val">~100%</div><div class="bar"><i class="b-green" style="width:100%"></i></div></div>
       <div class="score"><div class="lab">Speed</div><div class="val">Same day</div><div class="bar"><i class="b-teal" style="width:100%"></i></div></div>
       <div class="score"><div class="lab">Value</div><div class="val">Excellent</div><div class="bar"><i class="b-pink" style="width:95%"></i></div></div>
     </div>
-    <table class="d">
-      <tr><td>Price includes</td><td>1 release, up to <b>700 words</b> + 1 image + 1 video, AP News placement, indefinite hosting, full clickable distribution report. Pro+ ($499/5) → 1,000 words; Corporate ($999/15) → 2,500 words.</td></tr>
-      <tr><td>Named outlets — online</td><td>
-        <div class="grp">Newswires / aggregators (guaranteed)</div>
-        <span class="chan flag">AP News (apnews.com)</span><span class="chan flag">Google News</span><span class="chan flag">Bing News</span><span class="chan flag">Yahoo (search)</span>
-        <div class="grp">Financial & research terminals</div>
-        <span class="chan flag">Bloomberg Terminals</span><span class="chan flag">MuckRack</span><span class="chan flag">Crunchbase</span><span class="chan aff">Moody's NewsEdge</span><span class="chan aff">Naviga</span><span class="chan aff">MenaFN</span>
-        <div class="grp">AI / LLM ingestion</div>
-        <span class="chan flag">ChatGPT</span><span class="chan flag">Google Gemini</span>
-        <div class="grp">Named publishers seen in reports</div>
-        <span class="chan aff">National Law Review</span><span class="chan aff">Tampa Free Press</span><span class="chan aff">3,900+ Affinity Group niche sites</span>
-      </td></tr>
-      <tr><td>Not included</td><td>Flagship <b>Yahoo Finance</b> (EIN states you must use PR Newswire/GlobeNewswire/Business Wire for that). USA Today Network is "based on relevance," not guaranteed.</td></tr>
-      <tr><td>Validity of being featured now</td><td><b>~100% on its guaranteed network</b> (AP News, Google/Bing News, Bloomberg Terminals, MuckRack, Crunchbase).</td></tr>
-      <tr><td>How soon live</td><td><span class="chip c-fast">Same day / within hours</span> Google News ~15 min. First-time account verification up to 2 business days — <b>start now.</b></td></tr>
-      <tr><td>Approval process</td><td>Free account → paste release → ~2h editorial review (business hrs ET) → distributed → clickable report emailed.</td></tr>
-      <tr><td>Verdict</td><td class="verdict">Genuine AP News + Bloomberg Terminals + Crunchbase at 1/5 the cost of the wires. Best default unless the CEO specifically needs Yahoo Finance or Business Insider logos.</td></tr>
-    </table>
+    <div class="body">
+      <table class="facts">
+        <tr><td>Price includes</td><td>1 release · up to <b>700 words</b> + 1 image + 1 video · AP News placement · indefinite hosting · full clickable report. (Pro+ $499/5 → 1,000 words; Corporate $999/15 → 2,500 words.)</td></tr>
+        <tr><td>How soon live</td><td><span class="chip c-fast">Same day / within hours</span> &nbsp;Google News in ~15 min. First-time account verification up to 2 business days — start now.</td></tr>
+        <tr><td>Approval</td><td>Free account → paste release → ~2h editorial review (business hrs ET) → distributed → report emailed 2–4h later.</td></tr>
+      </table>
+      <div class="outlets">
+        <div class="otitle">Where your release actually appears (online):</div>
+        <div class="olist">
+          <span class="o g">AP News</span><span class="sep">·</span>
+          <span class="o g">Google News</span><span class="sep">·</span>
+          <span class="o g">Bing News</span><span class="sep">·</span>
+          <span class="o g">Benzinga</span><span class="sep">·</span>
+          <span class="o g">Bloomberg Terminals</span><span class="sep">·</span>
+          <span class="o g">MuckRack</span><span class="sep">·</span>
+          <span class="o g">Crunchbase</span><span class="sep">·</span>
+          <span class="o g">ChatGPT</span><span class="sep">·</span>
+          <span class="o g">Google Gemini</span><span class="sep">·</span>
+          <span class="o a">Moody's NewsEdge</span><span class="sep">·</span>
+          <span class="o a">Naviga</span><span class="sep">·</span>
+          <span class="o a">MenaFN</span><span class="sep">·</span>
+          <span class="o a">National Law Review</span><span class="sep">·</span>
+          <span class="o a">Tampa Free Press</span><span class="sep">·</span>
+          <span class="o a">USA Today Network (relevance)</span><span class="sep">·</span>
+          <span class="o a">3,900+ Affinity Group niche sites</span>
+        </div>
+      </div>
+      <div class="not"><b>Does NOT reach flagship Yahoo Finance</b> — EIN itself says use PR Newswire / GlobeNewswire / Business Wire for that.</div>
+      <div class="verdict">Genuine AP News + Benzinga + Bloomberg Terminals + Crunchbase at 1/5 the cost of the wires, and the only same-day real-AP route. Best default unless the CEO specifically needs Yahoo Finance or Business Insider logos.</div>
+    </div>
   </div>
 
   <!-- ===================== RANK 2 : BrandPush ===================== -->
@@ -121,27 +144,53 @@
       <div class="score"><div class="lab">Speed</div><div class="val">2–7 days</div><div class="bar"><i class="b-amber" style="width:35%"></i></div></div>
       <div class="score"><div class="lab">Value</div><div class="val">Very good</div><div class="bar"><i class="b-pink" style="width:80%"></i></div></div>
     </div>
-    <table class="d">
-      <tr><td>Price includes</td><td><b>Popular $265:</b> 300+ sites, <b>350–800 words</b>, Google News, live-URL report + "As Seen On" badge. Writing add-on $40–80.</td></tr>
-      <tr><td>Named outlets — Popular $265</td><td>
-        <div class="grp">Guaranteed</div>
-        <span class="chan flag">Google News</span>
-        <div class="grp">Affiliate / network pages</div>
-        <span class="chan aff">Benzinga</span><span class="chan aff">NCN</span><span class="chan aff">FOX affiliates (Fox40 etc.)</span><span class="chan aff">Digital Journal</span><span class="chan aff">NewsBreak</span><span class="chan aff">openPR</span>
-        <div class="grp" style="color:#ffb3ae">NOT in Popular</div>
-        <span class="chan aff">AP News · Business Insider (Authority tier)</span><span class="chan aff">Yahoo Finance (+$795)</span>
-      </td></tr>
-      <tr><td>Named outlets — Authority $595 (the logo wall)</td><td>
-        <span class="chan aff">AP News (affiliate)</span><span class="chan aff">Business Insider</span><span class="chan aff">Street Insider</span><span class="chan aff">AsiaOne</span><span class="chan aff">Newsmax</span><span class="chan aff">MSN (affiliate)</span> — 6 highest-authority sites, DA up to 94
-      </td></tr>
-      <tr><td>Named outlets — Ultimate $795</td><td>
-        <span class="chan aff">AP News</span><span class="chan aff">Business Insider</span><span class="chan aff">Benzinga</span><span class="chan aff">AsiaOne</span><span class="chan aff">Street Insider</span><span class="chan aff">NCN</span><span class="chan aff">FOX affiliates</span> — 450+ sites total
-      </td></tr>
-      <tr><td>Add-ons</td><td>Yahoo Finance affiliate <b>+$795</b> (adds +4 days) · MSN.com <b>+$595</b>.</td></tr>
-      <tr><td>Validity of being featured now</td><td><b>~100%, money-back guarantee</b> — but every marquee name is an affiliate/network page, not the real newsroom. Great for logos + SEO backlinks, not editorial credibility.</td></tr>
-      <tr><td>How soon live</td><td><span class="chip c-slow">2–7 business days</span> No same-day. No weekends. Yahoo add-on +4 days.</td></tr>
-      <tr><td>Verdict</td><td class="verdict">For the wall of logos, buy <b>Authority $595</b> — Popular $265 does NOT include AP or Business Insider. All affiliate placements, but real live URLs.</td></tr>
-    </table>
+    <div class="body">
+      <table class="facts">
+        <tr><td>Price includes</td><td><b>Popular $265:</b> 300+ sites · <b>350–800 words</b> · Google News · live-URL report + "As Seen On" badge. Writing add-on $40–80.</td></tr>
+        <tr><td>How soon live</td><td><span class="chip c-slow">2–7 business days</span> &nbsp;No same-day. No weekends. Yahoo add-on +4 days.</td></tr>
+        <tr><td>Approval</td><td>Order + upload → BrandPush team publishes across network → verifies live pages → sends full URL report.</td></tr>
+      </table>
+      <div class="outlets">
+        <div class="otitle">POPULAR ($265) — where it appears (online):</div>
+        <div class="olist">
+          <span class="o g">Google News</span><span class="sep">·</span>
+          <span class="o a">Benzinga</span><span class="sep">·</span>
+          <span class="o a">NCN</span><span class="sep">·</span>
+          <span class="o a">FOX affiliates (Fox40 etc.)</span><span class="sep">·</span>
+          <span class="o a">Digital Journal</span><span class="sep">·</span>
+          <span class="o a">NewsBreak</span><span class="sep">·</span>
+          <span class="o a">openPR</span>
+        </div>
+        <div class="otitle">AUTHORITY ($595) — the 6-outlet logo wall:</div>
+        <div class="olist">
+          <span class="o a">AP News</span><span class="sep">·</span>
+          <span class="o a">Business Insider</span><span class="sep">·</span>
+          <span class="o a">Street Insider</span><span class="sep">·</span>
+          <span class="o a">AsiaOne</span><span class="sep">·</span>
+          <span class="o a">Newsmax</span><span class="sep">·</span>
+          <span class="o a">MSN</span>
+        </div>
+        <div class="otitle">ULTIMATE ($795) — 450+ sites, incl:</div>
+        <div class="olist">
+          <span class="o a">AP News</span><span class="sep">·</span>
+          <span class="o a">Business Insider</span><span class="sep">·</span>
+          <span class="o a">Benzinga</span><span class="sep">·</span>
+          <span class="o a">AsiaOne</span><span class="sep">·</span>
+          <span class="o a">Street Insider</span><span class="sep">·</span>
+          <span class="o a">Newsmax</span><span class="sep">·</span>
+          <span class="o a">MSN</span><span class="sep">·</span>
+          <span class="o a">NCN</span><span class="sep">·</span>
+          <span class="o a">FOX affiliates</span>
+        </div>
+        <div class="otitle">Paid add-ons:</div>
+        <div class="olist">
+          <span class="o a">Yahoo Finance +$795 (+4 days)</span><span class="sep">·</span>
+          <span class="o a">MSN.com +$595</span>
+        </div>
+      </div>
+      <div class="not"><b>Popular $265 does NOT include AP or Business Insider</b> — those start at Authority $595. Every marquee name here is an affiliate/network page, not the real newsroom.</div>
+      <div class="verdict">For the wall of impressive logos, buy <b>Authority $595</b>. Great for "As Seen On" credibility + SEO backlinks with a money-back guarantee — just know they're affiliate placements, not editorial coverage.</div>
+    </div>
   </div>
 
   <!-- ===================== RANK 3 : Accesswire ===================== -->
@@ -153,26 +202,42 @@
     <div class="scores">
       <div class="score"><div class="lab">Prestige</div><div class="val">High</div><div class="bar"><i class="b-pink" style="width:82%"></i></div></div>
       <div class="score"><div class="lab">Exposure</div><div class="val">108+ premium sites</div><div class="bar"><i class="b-pink" style="width:78%"></i></div></div>
-      <div class="score"><div class="lab">Validity NOW</div><div class="val">High (guaranteed net.)</div><div class="bar"><i class="b-green" style="width:90%"></i></div></div>
+      <div class="score"><div class="lab">Validity NOW</div><div class="val">High</div><div class="bar"><i class="b-green" style="width:90%"></i></div></div>
       <div class="score"><div class="lab">Speed</div><div class="val">~Same/next day</div><div class="bar"><i class="b-teal" style="width:85%"></i></div></div>
       <div class="score"><div class="lab">Value</div><div class="val">Good</div><div class="bar"><i class="b-pink" style="width:65%"></i></div></div>
     </div>
-    <table class="d">
-      <tr><td>Price includes</td><td><b>National $775:</b> <b>unlimited words + images</b> (no overage fees), free YouTube/social embeds, AP distribution, financial terminals, analytics report.</td></tr>
-      <tr><td>Named outlets — online (National)</td><td>
-        <div class="grp">Genuine placements</div>
-        <span class="chan flag">AP (Associated Press)</span><span class="chan flag">Yahoo Finance</span><span class="chan flag">Bloomberg</span><span class="chan flag">Refinitiv</span><span class="chan flag">Morningstar</span><span class="chan flag">Nasdaq.com</span>
-        <div class="grp">Financial network</div>
-        <span class="chan aff">Benzinga</span><span class="chan aff">Broker terminals</span><span class="chan aff">Trading platforms</span><span class="chan aff">Investor databases</span>
-      </td></tr>
-      <tr><td>Premium $1,095 adds</td><td><span class="chan flag">Business Insider</span><span class="chan flag">AP Mobile</span><span class="chan aff">Specialty circuits</span></td></tr>
-      <tr><td>Validity of being featured now</td><td><b>High</b> — genuine AP + Yahoo Finance + Bloomberg placement on a guaranteed network. Editorial-grade, not affiliate.</td></tr>
-      <tr><td>How soon live</td><td><span class="chip c-fast">Submission ~30 min</span> Report populates within ~24h.</td></tr>
-      <tr><td>Verdict</td><td class="verdict">The real step up: genuine AP + Yahoo Finance + Bloomberg + Morningstar, unlimited length, no per-word fees. Best if the board wants prestige without Business Wire's cost.</td></tr>
-    </table>
+    <div class="body">
+      <table class="facts">
+        <tr><td>Price includes</td><td><b>National $775:</b> <b>unlimited words + images</b> (no overage fees) · free YouTube/social embeds · AP distribution · financial terminals · analytics report.</td></tr>
+        <tr><td>How soon live</td><td><span class="chip c-fast">Submission ~30 min</span> &nbsp;Report populates within ~24h.</td></tr>
+        <tr><td>Approval</td><td>Account → submit (unlimited length) → editorial pass → AP + outlet distribution → analytics report.</td></tr>
+      </table>
+      <div class="outlets">
+        <div class="otitle">NATIONAL ($775) — where it appears (online):</div>
+        <div class="olist">
+          <span class="o g">AP (Associated Press)</span><span class="sep">·</span>
+          <span class="o g">Yahoo Finance</span><span class="sep">·</span>
+          <span class="o g">Bloomberg</span><span class="sep">·</span>
+          <span class="o g">Refinitiv</span><span class="sep">·</span>
+          <span class="o g">Morningstar</span><span class="sep">·</span>
+          <span class="o g">Nasdaq.com</span><span class="sep">·</span>
+          <span class="o g">Benzinga</span><span class="sep">·</span>
+          <span class="o a">Broker terminals</span><span class="sep">·</span>
+          <span class="o a">Trading platforms</span><span class="sep">·</span>
+          <span class="o a">Investor databases</span>
+        </div>
+        <div class="otitle">PREMIUM ($1,095) adds:</div>
+        <div class="olist">
+          <span class="o g">Business Insider</span><span class="sep">·</span>
+          <span class="o g">AP Mobile</span><span class="sep">·</span>
+          <span class="o a">Specialty circuits</span>
+        </div>
+      </div>
+      <div class="verdict">The real step up in credibility: genuine AP + Yahoo Finance + Bloomberg + Morningstar + Nasdaq, unlimited length, no per-word fees. Best if the board wants prestige without Business Wire's cost.</div>
+    </div>
   </div>
 
-  <!-- ===================== RANK 4 : Business Wire / PRN / Globe ===================== -->
+  <!-- ===================== RANK 4 : BW / PRN / Globe ===================== -->
   <div class="rank">
     <div class="head h4c">
       <div class="left"><span class="num">#4</span><span class="name">Business Wire / PR Newswire / GlobeNewswire — Max prestige</span></div>
@@ -180,47 +245,64 @@
     </div>
     <div class="scores">
       <div class="score"><div class="lab">Prestige</div><div class="val">Highest</div><div class="bar"><i class="b-pink" style="width:100%"></i></div></div>
-      <div class="score"><div class="lab">Exposure</div><div class="val">3,500+ online sites</div><div class="bar"><i class="b-pink" style="width:100%"></i></div></div>
-      <div class="score"><div class="lab">Validity NOW</div><div class="val">High (real wire)</div><div class="bar"><i class="b-green" style="width:88%"></i></div></div>
+      <div class="score"><div class="lab">Exposure</div><div class="val">3,500+ sites</div><div class="bar"><i class="b-pink" style="width:100%"></i></div></div>
+      <div class="score"><div class="lab">Validity NOW</div><div class="val">High</div><div class="bar"><i class="b-green" style="width:88%"></i></div></div>
       <div class="score"><div class="lab">Speed</div><div class="val">1–3 days</div><div class="bar"><i class="b-amber" style="width:55%"></i></div></div>
       <div class="score"><div class="lab">Value</div><div class="val">Poor for a course</div><div class="bar"><i class="b-amber" style="width:25%"></i></div></div>
     </div>
-    <table class="d">
-      <tr><td>Price includes</td><td><b>400 words base</b>, then +$195/100 words (BW) / +$245/100 (PRN). Image hosting is a paid add-on (~$425 first image on BW). Loaded releases hit $2,000–3,800.</td></tr>
-      <tr><td>Named outlets — online (GlobeNewswire US National, representative)</td><td>
-        <div class="grp">Genuine flagship placements</div>
-        <span class="chan flag">Yahoo Finance</span><span class="chan flag">MarketWatch</span><span class="chan flag">Nasdaq</span><span class="chan flag">Bloomberg</span><span class="chan flag">Morningstar</span><span class="chan flag">MSN Money</span><span class="chan flag">The Motley Fool</span><span class="chan flag">CNNMoney</span><span class="chan flag">AOL</span><span class="chan flag">E*Trade</span><span class="chan flag">Stockhouse</span><span class="chan flag">BigCharts</span>
-        <div class="grp">Wires & disclosure</div>
-        <span class="chan flag">AP</span><span class="chan flag">Reuters / Thomson Reuters</span><span class="chan flag">Dow Jones</span><span class="chan flag">The Wall Street Journal</span><span class="chan flag">The New York Times</span><span class="chan flag">UPI</span>
-      </td></tr>
-      <tr><td>Validity of being featured now</td><td><b>High</b> — the real wire flagship terminals ingest. The <b>only</b> route to genuine flagship Yahoo Finance, MarketWatch, WSJ, NYT. Reg-FD grade.</td></tr>
-      <tr><td>How soon live</td><td><span class="chip c-slow">1–3 business days</span></td></tr>
-      <tr><td>Verdict</td><td class="verdict">Only justified for IPO/disclosure-grade prestige + genuine flagship Yahoo Finance/WSJ/NYT. Overkill and expensive for a consumer course launch.</td></tr>
-    </table>
+    <div class="body">
+      <table class="facts">
+        <tr><td>Price includes</td><td><b>400 words base</b>, then +$195/100 words (BW) / +$245/100 (PRN). Image hosting a paid add-on (~$425 first image, BW). Loaded releases hit $2,000–3,800.</td></tr>
+        <tr><td>How soon live</td><td><span class="chip c-slow">1–3 business days</span></td></tr>
+        <tr><td>Approval</td><td>Quote/contract → submit → editorial + compliance review → wire distribution. PRN needs $195/yr membership first.</td></tr>
+      </table>
+      <div class="outlets">
+        <div class="otitle">Where it appears (online, GlobeNewswire US National — representative):</div>
+        <div class="olist">
+          <span class="o g">Yahoo Finance</span><span class="sep">·</span>
+          <span class="o g">MarketWatch</span><span class="sep">·</span>
+          <span class="o g">Nasdaq</span><span class="sep">·</span>
+          <span class="o g">Bloomberg</span><span class="sep">·</span>
+          <span class="o g">Morningstar</span><span class="sep">·</span>
+          <span class="o g">MSN Money</span><span class="sep">·</span>
+          <span class="o g">The Motley Fool</span><span class="sep">·</span>
+          <span class="o g">CNNMoney</span><span class="sep">·</span>
+          <span class="o g">AOL</span><span class="sep">·</span>
+          <span class="o g">E*Trade</span><span class="sep">·</span>
+          <span class="o g">Stockhouse</span><span class="sep">·</span>
+          <span class="o g">BigCharts</span><span class="sep">·</span>
+          <span class="o g">AP</span><span class="sep">·</span>
+          <span class="o g">Reuters / Thomson Reuters</span><span class="sep">·</span>
+          <span class="o g">Dow Jones</span><span class="sep">·</span>
+          <span class="o g">The Wall Street Journal</span><span class="sep">·</span>
+          <span class="o g">The New York Times</span><span class="sep">·</span>
+          <span class="o g">UPI</span>
+        </div>
+      </div>
+      <div class="verdict">The only route to genuine flagship Yahoo Finance, MarketWatch, WSJ, NYT, Reuters. Reg-FD / IPO-disclosure grade — overkill and expensive for a consumer course launch.</div>
+    </div>
   </div>
 
   <h3 class="sec">Bottom line for the CEO</h3>
-  <div class="rank" style="margin-bottom:8px">
-    <table class="d">
-      <tr style="color:var(--pink2)"><td style="width:auto;color:var(--pink2)"><b>If the priority is…</b></td><td><b>Choose</b></td><td><b>Cost</b></td><td><b>The marquee names you get</b></td></tr>
-      <tr><td style="color:#fff;font-weight:700">Live today + real AP</td><td>EIN Presswire</td><td>$149</td><td>AP News, Bloomberg Terminals, Crunchbase, MuckRack</td></tr>
-      <tr><td style="color:#fff;font-weight:700">The "As Seen On" logo wall</td><td>BrandPush Authority</td><td>$595</td><td>AP, Business Insider, Newsmax, AsiaOne, Street Insider (affiliate)</td></tr>
+  <div class="rank" style="margin-bottom:8px"><div class="body" style="padding-top:14px">
+    <table class="summary">
+      <tr><td>If the priority is…</td><td>Choose</td><td>Cost</td><td>The marquee names you get</td></tr>
+      <tr><td style="color:#fff;font-weight:700">Live today + real AP</td><td>EIN Presswire</td><td>$149</td><td>AP News, Benzinga, Bloomberg Terminals, Crunchbase</td></tr>
+      <tr><td style="color:#fff;font-weight:700">"As Seen On" logo wall</td><td>BrandPush Authority</td><td>$595</td><td>AP, Business Insider, Newsmax, AsiaOne, Street Insider (affiliate)</td></tr>
       <tr><td style="color:#fff;font-weight:700">Real prestige, unlimited length</td><td>Accesswire National</td><td>$775</td><td>AP, Yahoo Finance, Bloomberg, Morningstar, Nasdaq (genuine)</td></tr>
-      <tr><td style="color:#fff;font-weight:700">Flagship Yahoo Finance / WSJ / IPO-grade</td><td>GlobeNewswire / BW</td><td>$1,200+</td><td>Yahoo Finance, MarketWatch, WSJ, NYT, Reuters, Dow Jones (genuine)</td></tr>
+      <tr><td style="color:#fff;font-weight:700">Flagship Yahoo Finance / WSJ</td><td>GlobeNewswire / BW</td><td>$1,200+</td><td>Yahoo Finance, MarketWatch, WSJ, NYT, Reuters, Dow Jones (genuine)</td></tr>
     </table>
-  </div>
+  </div></div>
 
   <p class="fine">
     Sources: <a class="src" href="https://www.einpresswire.com/faq">EIN FAQ (named partners; Yahoo Finance excluded)</a>,
-    <a class="src" href="https://www.einpresswire.com/pricing">EIN pricing/channels</a>,
+    <a class="src" href="https://www.newsmatics.com/press/726172896-ein-presswire-adds-benzinga-to-distribution-network">EIN adds Benzinga</a>,
     <a class="src" href="https://help.brandpush.co/en/articles/7970128-what-s-your-money-back-guarantee">BrandPush per-package guarantee</a>,
-    <a class="src" href="https://www.openpr.com/news/3700406/brand-push-review-is-brandpush-legit-honest-view">BrandPush named outlets (Authority/Ultimate)</a>,
-    <a class="src" href="https://onesmartsheep.com/post/brandpush-review-the-ultimate-press-release-distribution-service">BrandPush affiliate detail</a>,
+    <a class="src" href="https://www.openpr.com/news/3700406/brand-push-review-is-brandpush-legit-honest-view">BrandPush named outlets</a>,
     <a class="src" href="https://www.youtube.com/watch?v=WcIHTejA0LA">Accesswire named outlets (AP, Yahoo Finance, Bloomberg, Refinitiv)</a>,
-    <a class="src" href="https://www.accessnewswire.com/specialguest/press-release-distribution">Accesswire tiers</a>,
     <a class="src" href="https://www.globenewswire.com/home/send-press-release/distribution-options">GlobeNewswire named online outlets</a>,
     <a class="src" href="https://www.prezly.com/academy/business-wire-pricing">Business Wire pricing</a>.
-    Online coverage only (TV/radio excluded). Guaranteed-publish services carry money-back guarantees; validity assumes weekday-morning submission.
+    Online coverage only. Guaranteed-publish services carry money-back guarantees; validity assumes weekday-morning submission.
   </p>
 </body>
 </html>
