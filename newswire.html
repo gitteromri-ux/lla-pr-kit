@@ -6,7 +6,7 @@
 <title>LLA — Paid Newswire Options for the Board</title>
 <style>
   :root{--bg:#0d1117;--card:#1a121a;--line:#3d2b38;--tx:#f2e6ef;--mut:#c69bb6;
-        --pink:#db61a2;--pink2:#f778ba;--pinkbg:#25121e;--teal:#39c5cf;--amber:#e3a92c;--red:#f85149;}
+        --pink:#db61a2;--pink2:#f778ba;--pinkbg:#25121e;--teal:#39c5cf;--amber:#e3a92c;--red:#f85149;--green:#3fb950;}
   *{box-sizing:border-box}
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55;padding:24px;max-width:1120px;margin:0 auto}
   h1{font-size:26px;margin:0 0 4px;color:var(--pink2)}
@@ -17,135 +17,181 @@
 
   .urgent{background:rgba(248,81,73,.1);border:1px solid var(--red);border-left:4px solid var(--red);border-radius:8px;padding:12px 16px;margin:0 0 18px;font-size:14px}
   .urgent b{color:#ffb3ae}
-  .rec{background:var(--pinkbg);border:1px solid var(--pink);border-left:4px solid var(--pink);border-radius:10px;padding:14px 18px;margin:0 0 26px}
-  .rec h2{margin:0 0 8px;font-size:16px;color:var(--pink2)}
-  .rec b{color:#fff}
 
-  .opt{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 20px;overflow:hidden}
-  .opt .head{padding:14px 20px;color:#fff;font-weight:700;font-size:17px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-  .opt .head .price{font-size:15px;font-weight:800;background:rgba(0,0,0,.3);padding:4px 12px;border-radius:20px;white-space:nowrap}
-  .h-pink{background:linear-gradient(90deg,#a13a6f,#db61a2)}
-  .h-pink2{background:linear-gradient(90deg,#7a2d52,#b0497f)}
-  .opt table{width:100%;border-collapse:collapse;font-size:14px}
-  .opt td{padding:11px 20px;border-bottom:1px solid var(--line);vertical-align:top}
-  .opt td:first-child{color:var(--pink2);width:30%;font-weight:700;text-transform:uppercase;font-size:11.5px;letter-spacing:.04em}
-  .opt tr:last-child td{border-bottom:none}
-  .chip{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:12px;margin:2px 4px 2px 0}
+  .legend{background:var(--pinkbg);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:0 0 22px;font-size:13px;color:var(--mut)}
+  .legend b{color:var(--pink2)}
+
+  .rank{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 20px;overflow:hidden}
+  .rank .head{padding:14px 20px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+  .rank .head .left{display:flex;align-items:center;gap:12px}
+  .rank .head .num{font-size:22px;font-weight:800;opacity:.85}
+  .rank .head .name{font-size:18px;font-weight:800}
+  .rank .head .price{font-size:15px;font-weight:800;background:rgba(0,0,0,.3);padding:4px 12px;border-radius:20px;white-space:nowrap}
+  .h1c{background:linear-gradient(90deg,#7a2d52,#db61a2)}
+  .h2c{background:linear-gradient(90deg,#7a2d52,#c559a0)}
+  .h3c{background:linear-gradient(90deg,#5f2742,#a94b85)}
+  .h4c{background:linear-gradient(90deg,#4a2038,#8a3f6d)}
+
+  .scores{display:flex;gap:8px;flex-wrap:wrap;padding:12px 20px;border-bottom:1px solid var(--line);background:rgba(219,97,162,.05)}
+  .score{flex:1;min-width:120px}
+  .score .lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);margin-bottom:3px}
+  .score .val{font-size:14px;font-weight:700;color:#fff}
+  .bar{height:6px;border-radius:3px;background:rgba(255,255,255,.1);margin-top:4px;overflow:hidden}
+  .bar i{display:block;height:100%;border-radius:3px}
+  .b-pink{background:var(--pink2)} .b-teal{background:var(--teal)} .b-green{background:var(--green)} .b-amber{background:var(--amber)}
+
+  table.d{width:100%;border-collapse:collapse;font-size:14px}
+  table.d td{padding:10px 20px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.d tr:last-child td{border-bottom:none}
+  table.d td:first-child{color:var(--pink2);width:28%;font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.04em}
+  .chan{display:inline-block;background:rgba(219,97,162,.14);color:#f0a8ce;border:1px solid rgba(219,97,162,.3);font-size:12px;padding:3px 9px;border-radius:6px;margin:2px 5px 2px 0}
+  .chan.flag{background:rgba(63,185,80,.15);color:#7ee787;border-color:rgba(63,185,80,.35)}
+  .chan.aff{opacity:.72}
+  .chip{display:inline-block;font-size:12px;font-weight:700;padding:3px 9px;border-radius:12px}
   .c-fast{background:rgba(57,197,207,.18);color:var(--teal)}
   .c-slow{background:rgba(227,169,44,.18);color:var(--amber)}
-  .chan{display:inline-block;background:rgba(219,97,162,.14);color:#f0a8ce;border:1px solid rgba(219,97,162,.3);font-size:12px;padding:3px 9px;border-radius:6px;margin:2px 5px 2px 0}
-  .verdict{font-style:normal;color:#fff}
-
+  .verdict{color:#fff}
   h3.sec{font-size:16px;margin:28px 0 10px;border-bottom:1px solid var(--line);padding-bottom:6px;color:var(--pink2)}
   .fine{color:var(--mut);font-size:12.5px;margin-top:18px;line-height:1.6}
   a.src{color:var(--pink2)}
 </style>
 </head>
 <body>
-  <h1>Paid Newswire Options — Board Decision Sheet</h1>
-  <p class="sub">Longevity Life Academy PR blitz · Verified 14 July 2026 · One release, one-time fee unless noted</p>
+  <h1>Paid Newswire Options — Ranked for the Board</h1>
+  <p class="sub">Longevity Life Academy PR blitz · Verified 14 July 2026 · Ranked by prestige × exposure × value · One release, one-time fee</p>
   <div class="nav">
     <a href="index.html">◀ Submission Kit (free outlets)</a>
     <a href="newswire.html" class="active">Paid Newswire Options</a>
   </div>
 
   <div class="urgent">
-    <b>⏱ URGENT / TIME-SENSITIVE:</b> Only <b>EIN Presswire</b> goes live the same day (within hours). <b>BrandPush takes 2–7 business days and never publishes on weekends.</b> If it must be live this week, that is the deciding factor.
+    <b>⏱ IF IT MUST BE LIVE THIS WEEK:</b> Only <b>EIN Presswire</b> and <b>Accesswire</b> publish same/next day. <b>BrandPush is 2–7 business days and never publishes weekends.</b>
   </div>
 
-  <div class="rec">
-    <h2>Recommendation for the CEO</h2>
-    <b>Fastest + cheapest:</b> EIN Presswire ($99–149) — live in hours, AP News + Google News.<br>
-    <b>Widest reach / best "as-seen-on" value:</b> BrandPush Popular ($265) — 200–300 outlets, but 2–7 days.<br>
-    <b>Genuine AP + financial prestige:</b> Accesswire National ($775), unlimited length.
+  <div class="legend">
+    <b>How to read this:</b> "Validity of being featured NOW" = the odds your release actually appears on the promised outlets on your timeline. Guaranteed-publish services (money-back) are ~100% on the outlets they <b>control</b>. &nbsp;
+    <b class="chan flag" style="border:none">Green tag</b> = genuine flagship placement. &nbsp;
+    <span class="chan aff" style="border:none">Faded tag</span> = affiliate / network page carrying the brand, <b>not</b> the outlet's main newsroom. This distinction is the single most important thing for the CEO to understand.
   </div>
 
-  <!-- ================= EIN ================= -->
-  <div class="opt">
-    <div class="head h-pink">1 · EIN Presswire <span class="price">$99 (Basic) · $99.80/ea in 5-pack · $66.60/ea in 15-pack</span></div>
-    <table>
-      <tr><td>Article length</td><td><b>Up to 700 words</b> (Basic) · 1,000 (Pro+) · 2,500 (Corporate). Title ≤120 chars, no ALL-CAPS, one quote ≤200 chars.</td></tr>
-      <tr><td>You write or they write</td><td>You paste your own (built-in AI drafting available). No writing fee.</td></tr>
-      <tr><td>Channels included</td><td><span class="chan">AP News (~35M reach)</span><span class="chan">Nexstar Media Group</span><span class="chan">Google News (~15 min)</span><span class="chan">Bloomberg Terminals</span><span class="chan">MuckRack</span><span class="chan">Moody's NewsEdge</span><span class="chan">MenaFN</span><span class="chan">3,900+ affinity sites</span><span class="chan">Google/Bing/Yahoo search</span><span class="chan">Social push</span></td></tr>
-      <tr><td>How soon live</td><td><span class="chip c-fast">Same day / within hours</span> Google News in ~15 min; full propagation ~2 hours.</td></tr>
-      <tr><td>Process</td><td>1) Free account → 2) paste release, pick categories/targets → 3) submit → 4) editorial review → 5) distributed → 6) report emailed in 2–4h.</td></tr>
-      <tr><td>Approval time</td><td><b>~2 hours</b> in business hours (ET). <b>First-time accounts: one-time verification up to 2 business days</b> — do this NOW to unlock same-day later.</td></tr>
-      <tr><td>Stays live</td><td>Hosted indefinitely; 365-day window to use the release.</td></tr>
-      <tr><td>Verdict</td><td class="verdict">Fastest and cheapest real AP route. Much of the network is EIN's own sites (lower external authority), but perfect for an urgent launch.</td></tr>
+  <!-- ===================== RANK 1 : EIN ===================== -->
+  <div class="rank">
+    <div class="head h1c">
+      <div class="left"><span class="num">#1</span><span class="name">EIN Presswire — Best overall value + speed</span></div>
+      <span class="price">$149 single · $99.80/ea (5) · $66.60/ea (15)</span>
+    </div>
+    <div class="scores">
+      <div class="score"><div class="lab">Prestige</div><div class="val">Medium-High</div><div class="bar"><i class="b-pink" style="width:65%"></i></div></div>
+      <div class="score"><div class="lab">Exposure</div><div class="val">350M MAU network</div><div class="bar"><i class="b-pink" style="width:80%"></i></div></div>
+      <div class="score"><div class="lab">Validity NOW</div><div class="val">~100% (guaranteed)</div><div class="bar"><i class="b-green" style="width:100%"></i></div></div>
+      <div class="score"><div class="lab">Speed</div><div class="val">Same day</div><div class="bar"><i class="b-teal" style="width:100%"></i></div></div>
+      <div class="score"><div class="lab">Value</div><div class="val">Excellent</div><div class="bar"><i class="b-pink" style="width:95%"></i></div></div>
+    </div>
+    <table class="d">
+      <tr><td>What the price includes</td><td>1 release, up to <b>700 words</b> + 1 image + 1 video, AP News placement, indefinite hosting, full distribution report. (Pro+ $499/5 → 1,000 words; Corporate $999/15 → 2,500 words.)</td></tr>
+      <tr><td>Most impressive names</td><td><span class="chan flag">AP News (real, 35M reach)</span><span class="chan flag">Google News</span><span class="chan flag">Bloomberg Terminals</span><span class="chan flag">MuckRack</span><span class="chan aff">USA TODAY Network (relevance)</span><span class="chan aff">Nexstar TV/radio (relevance)</span><span class="chan aff">3,900+ affinity sites</span></td></tr>
+      <tr><td>Validity of being featured now</td><td><b>~100% on its guaranteed network</b> (AP News, Google News, its own newswires). TV/USA Today are "based on relevance," not guaranteed. <b>Does NOT reach flagship Yahoo Finance.</b></td></tr>
+      <tr><td>How soon live</td><td><span class="chip c-fast">Same day / within hours</span> Google News ~15 min · full propagation ~2h. First-time account verification up to 2 business days — <b>start now.</b></td></tr>
+      <tr><td>Approval process</td><td>Free account → paste release → ~2h editorial review (business hours ET) → distributed → report emailed.</td></tr>
+      <tr><td>Verdict</td><td class="verdict">The genuine AP placement is the real prize here, at 1/5 the cost of the wires. Best default choice unless the CEO specifically needs Yahoo Finance or Business Insider logos.</td></tr>
     </table>
   </div>
 
-  <!-- ================= BRANDPUSH ================= -->
-  <div class="opt">
-    <div class="head h-pink">2 · BrandPush — Popular <span class="price">$265 one-time (Limited $195 · Ultimate $795)</span></div>
-    <table>
-      <tr><td>Article length</td><td><b>350–800 words</b> (up to 1,200 accepted). Headline 8–20 words, summary ≤45 words, 1 image per 250 words, max 5 links.</td></tr>
-      <tr><td>You write or they write</td><td>Write your own free, or add writing: $40 (350w) / $60 (500w) / $80 (700w+).</td></tr>
-      <tr><td>Channels included (Popular)</td><td><span class="chan">~200–300 outlets</span><span class="chan">AP affiliate</span><span class="chan">Yahoo Finance affiliate</span><span class="chan">Business Insider</span><span class="chan">Benzinga</span><span class="chan">FOX affiliates</span><span class="chan">NBC affiliates</span><span class="chan">USA Today affiliate</span><span class="chan">MSN (+1 day add-on)</span><span class="chan">Google News</span><span class="chan">Digital Journal</span><span class="chan">NewsBreak</span></td></tr>
-      <tr><td>Reach</td><td>~26–28M monthly readers. Ultimate ($795) = 450+ outlets, ~222M readers.</td></tr>
-      <tr><td>How soon live</td><td><span class="chip c-slow">2–7 business days</span> No same-day. <b>No weekend publishing.</b> Yahoo Finance/MarketWatch add-on adds +4 business days.</td></tr>
-      <tr><td>Process</td><td>1) Order + upload story → 2) BrandPush team publishes across the network → 3) they review all live pages → 4) send full report of every live URL.</td></tr>
-      <tr><td>Approval time</td><td>Publishing 2–3 business days after approval; report compiled 1–2 days after go-live. Total typically 5–7 days.</td></tr>
-      <tr><td>Stays live</td><td>Permanent (traffic peaks in first week).</td></tr>
-      <tr><td>Verdict</td><td class="verdict">Best value for the widest credible "as-seen-on" footprint + SEO backlinks. Not for anything that must publish today.</td></tr>
+  <!-- ===================== RANK 2 : BrandPush ===================== -->
+  <div class="rank">
+    <div class="head h2c">
+      <div class="left"><span class="num">#2</span><span class="name">BrandPush — Best for "as-seen-on" logos</span></div>
+      <span class="price">Popular $265 · Authority $595 · Ultimate $795</span>
+    </div>
+    <div class="scores">
+      <div class="score"><div class="lab">Prestige</div><div class="val">Medium (affiliate)</div><div class="bar"><i class="b-pink" style="width:55%"></i></div></div>
+      <div class="score"><div class="lab">Exposure</div><div class="val">28M–222M readers</div><div class="bar"><i class="b-pink" style="width:90%"></i></div></div>
+      <div class="score"><div class="lab">Validity NOW</div><div class="val">~100% (money-back)</div><div class="bar"><i class="b-green" style="width:100%"></i></div></div>
+      <div class="score"><div class="lab">Speed</div><div class="val">2–7 days</div><div class="bar"><i class="b-amber" style="width:35%"></i></div></div>
+      <div class="score"><div class="lab">Value</div><div class="val">Very good</div><div class="bar"><i class="b-pink" style="width:80%"></i></div></div>
+    </div>
+    <table class="d">
+      <tr><td>What the price includes</td><td><b>Popular $265:</b> 300+ sites, <b>350–800 words</b>, Google News, live-URL report + "As Seen On" badge. Writing add-on $40–80. <b>Important:</b> Popular does NOT include AP or Business Insider.</td></tr>
+      <tr><td>Most impressive names — Popular $265</td><td><span class="chan flag">Google News</span><span class="chan aff">Benzinga</span><span class="chan aff">FOX affiliates</span><span class="chan aff">NCN</span><span class="chan aff">Digital Journal</span><span class="chan aff">NewsBreak</span></td></tr>
+      <tr><td>Most impressive names — Authority $595</td><td><span class="chan aff">AP News (affiliate)</span><span class="chan aff">Business Insider</span><span class="chan aff">Street Insider</span><span class="chan aff">AsiaOne</span><span class="chan aff">Newsmax</span> — 6 highest-authority outlets, DA up to 94, 212M readers</td></tr>
+      <tr><td>Yahoo Finance</td><td>NOT in any base package — <b>+$795 add-on</b>, and adds +4 business days. And it is a Yahoo Finance <b>affiliate</b> page, not the flagship.</td></tr>
+      <tr><td>Validity of being featured now</td><td><b>~100%, money-back guarantee</b> — but placements are affiliate/network pages carrying the brand, not the outlet's main newsroom. Good for logos + SEO backlinks, not editorial credibility.</td></tr>
+      <tr><td>How soon live</td><td><span class="chip c-slow">2–7 business days</span> No same-day. No weekend publishing. Yahoo add-on +4 days.</td></tr>
+      <tr><td>Approval process</td><td>Order + upload → BrandPush team publishes across network → verifies live pages → sends full URL report.</td></tr>
+      <tr><td>Verdict</td><td class="verdict">If the CEO wants the wall of impressive logos ("As Seen On Business Insider, AP…"), buy <b>Authority $595</b> — Popular $265 does NOT include the marquee names. Just know they're affiliate placements.</td></tr>
     </table>
   </div>
 
-  <!-- ================= ACCESSWIRE ================= -->
-  <div class="opt">
-    <div class="head h-pink2">3 · Accesswire — National <span class="price">$775 (Online $175 · Budget $415 · Premium $1,095)</span></div>
-    <table>
-      <tr><td>Article length</td><td><b>Unlimited words + images</b> — no overage fees. Embed YouTube/social free. (Practical limit ~5,000 chars per field.)</td></tr>
-      <tr><td>You write or they write</td><td>You provide the release; writing support optional.</td></tr>
-      <tr><td>Channels included (National)</td><td><span class="chan">AP (Associated Press)</span><span class="chan">Major news outlets</span><span class="chan">TV stations</span><span class="chan">Newsrooms</span><span class="chan">Broker terminals</span><span class="chan">Trading platforms</span><span class="chan">Financial media</span> Premium ($1,095) adds <span class="chan">Business Insider</span><span class="chan">AP Mobile</span><span class="chan">Specialty circuits</span></td></tr>
-      <tr><td>How soon live</td><td><span class="chip c-fast">Submission ~30 min</span> Report may take up to 24h to fully populate.</td></tr>
-      <tr><td>Process</td><td>1) Account / pay-as-you-go → 2) submit release (unlimited length) → 3) editorial pass → 4) distribution to AP + outlets → 5) analytics report.</td></tr>
-      <tr><td>Approval time</td><td>Editorial review then distribution; typically same/next business day. Report populates within ~24h.</td></tr>
-      <tr><td>Stays live</td><td>Permanent archive.</td></tr>
-      <tr><td>Verdict</td><td class="verdict">Best if the board wants a genuine AP placement and financial-terminal reach without Business Wire's per-word bleed.</td></tr>
+  <!-- ===================== RANK 3 : Accesswire ===================== -->
+  <div class="rank">
+    <div class="head h3c">
+      <div class="left"><span class="num">#3</span><span class="name">Accesswire — Best genuine AP + financial prestige</span></div>
+      <span class="price">Online $175 · Budget $415 · National $775 · Premium $1,095</span>
+    </div>
+    <div class="scores">
+      <div class="score"><div class="lab">Prestige</div><div class="val">High</div><div class="bar"><i class="b-pink" style="width:82%"></i></div></div>
+      <div class="score"><div class="lab">Exposure</div><div class="val">National + terminals</div><div class="bar"><i class="b-pink" style="width:78%"></i></div></div>
+      <div class="score"><div class="lab">Validity NOW</div><div class="val">High (guaranteed net.)</div><div class="bar"><i class="b-green" style="width:90%"></i></div></div>
+      <div class="score"><div class="lab">Speed</div><div class="val">~Same/next day</div><div class="bar"><i class="b-teal" style="width:85%"></i></div></div>
+      <div class="score"><div class="lab">Value</div><div class="val">Good</div><div class="bar"><i class="b-pink" style="width:65%"></i></div></div>
+    </div>
+    <table class="d">
+      <tr><td>What the price includes</td><td><b>National $775:</b> <b>unlimited words + images</b> (no overage fees), free YouTube/social embeds, AP distribution, broker/trading terminals, analytics report.</td></tr>
+      <tr><td>Most impressive names — National</td><td><span class="chan flag">AP (Associated Press)</span><span class="chan flag">Broker terminals</span><span class="chan flag">Trading platforms</span><span class="chan aff">Major news outlets</span><span class="chan aff">US TV stations</span></td></tr>
+      <tr><td>Premium $1,095 adds</td><td><span class="chan flag">Business Insider</span><span class="chan flag">AP Mobile</span><span class="chan aff">Specialty circuits</span></td></tr>
+      <tr><td>Validity of being featured now</td><td><b>High</b> — real AP placement, guaranteed network. More editorial-grade than affiliate services.</td></tr>
+      <tr><td>How soon live</td><td><span class="chip c-fast">Submission ~30 min</span> Report populates within ~24h.</td></tr>
+      <tr><td>Approval process</td><td>Account → submit (unlimited length) → editorial pass → AP + outlet distribution → analytics report.</td></tr>
+      <tr><td>Verdict</td><td class="verdict">The step up in credibility from BrandPush: real AP, unlimited length, financial terminals. Worth it if the board wants prestige without Business Wire's per-word fees.</td></tr>
     </table>
   </div>
 
-  <!-- ================= BUSINESS WIRE ================= -->
-  <div class="opt">
-    <div class="head h-pink2">4 · Business Wire / PR Newswire <span class="price">$760–2,500+ (BW) · $805 national + $195/yr (PRN)</span></div>
-    <table>
-      <tr><td>Article length</td><td><b>400 words base</b>, then +$195/100 words (BW) or +$245/100 words (PRN). Length gets expensive fast. Headline ≤250 chars (BW).</td></tr>
-      <tr><td>You write or they write</td><td>You provide; multimedia hosting is a paid add-on ($425 first image on BW).</td></tr>
-      <tr><td>Channels included</td><td><span class="chan">AP</span><span class="chan">Reuters terminals</span><span class="chan">Yahoo Finance</span><span class="chan">MarketWatch</span><span class="chan">~600 regional partners</span><span class="chan">2,500+ outlets</span><span class="chan">158 countries</span><span class="chan">Bloomberg</span></td></tr>
+  <!-- ===================== RANK 4 : Business Wire ===================== -->
+  <div class="rank">
+    <div class="head h4c">
+      <div class="left"><span class="num">#4</span><span class="name">Business Wire / PR Newswire — Max prestige, poor value here</span></div>
+      <span class="price">$760–2,500+ (BW) · $805 nat'l + $195/yr (PRN)</span>
+    </div>
+    <div class="scores">
+      <div class="score"><div class="lab">Prestige</div><div class="val">Highest</div><div class="bar"><i class="b-pink" style="width:100%"></i></div></div>
+      <div class="score"><div class="lab">Exposure</div><div class="val">2,500+ outlets, global</div><div class="bar"><i class="b-pink" style="width:100%"></i></div></div>
+      <div class="score"><div class="lab">Validity NOW</div><div class="val">High (real wire)</div><div class="bar"><i class="b-green" style="width:88%"></i></div></div>
+      <div class="score"><div class="lab">Speed</div><div class="val">1–3 days</div><div class="bar"><i class="b-amber" style="width:55%"></i></div></div>
+      <div class="score"><div class="lab">Value</div><div class="val">Poor for a course</div><div class="bar"><i class="b-amber" style="width:25%"></i></div></div>
+    </div>
+    <table class="d">
+      <tr><td>What the price includes</td><td><b>400 words base</b>, then +$195/100 words (BW) / +$245/100 (PRN). Image hosting is a paid add-on (~$425 first image on BW). Loaded releases hit $2,000–3,800.</td></tr>
+      <tr><td>Most impressive names</td><td><span class="chan flag">AP</span><span class="chan flag">Reuters terminals</span><span class="chan flag">Yahoo Finance (REAL)</span><span class="chan flag">MarketWatch</span><span class="chan flag">Bloomberg</span><span class="chan aff">~600 regional partners</span><span class="chan aff">2,500+ outlets, 158 countries</span></td></tr>
+      <tr><td>Validity of being featured now</td><td><b>High</b> — this is the real wire the flagship terminals ingest. The only route to genuine flagship Yahoo Finance / MarketWatch. Reg-FD grade.</td></tr>
       <tr><td>How soon live</td><td><span class="chip c-slow">1–3 business days</span></td></tr>
-      <tr><td>Process</td><td>Quote/contract → submit → editorial + compliance review → wire distribution. PRN requires $195/yr membership before first send.</td></tr>
-      <tr><td>Approval time</td><td>1–3 business days; add-ons and word overages reviewed at quote stage.</td></tr>
-      <tr><td>Stays live</td><td>Permanent.</td></tr>
-      <tr><td>Verdict</td><td class="verdict">Highest prestige (IPOs, SEC disclosures) but overkill and poor value for a consumer course launch. Loaded releases hit $2,000–3,800.</td></tr>
+      <tr><td>Approval process</td><td>Quote/contract → submit → editorial + compliance review → wire distribution. PRN needs $195/yr membership first.</td></tr>
+      <tr><td>Verdict</td><td class="verdict">Only justified if the CEO explicitly wants IPO/disclosure-grade prestige and genuine flagship Yahoo Finance. Overkill and expensive for a consumer course launch.</td></tr>
     </table>
   </div>
 
-  <h3 class="sec">One-line summary</h3>
-  <div class="opt" style="margin-bottom:8px">
-    <table>
-      <tr style="color:var(--pink2)"><td style="width:auto;color:var(--pink2)"><b>Service</b></td><td><b>Cost</b></td><td><b>Length</b></td><td><b>Live in</b></td><td><b>Key channels</b></td></tr>
-      <tr><td style="color:#fff;font-weight:700">EIN Presswire</td><td>$99–149</td><td>≤700 words</td><td><span style="color:var(--teal)">Same day</span></td><td>AP, Google News, Bloomberg terminals</td></tr>
-      <tr><td style="color:#fff;font-weight:700">BrandPush Popular</td><td>$265</td><td>350–800 words</td><td>2–7 days</td><td>Yahoo Finance, Business Insider, Benzinga, FOX/NBC affiliates</td></tr>
-      <tr><td style="color:#fff;font-weight:700">Accesswire National</td><td>$775</td><td>Unlimited</td><td>~same day</td><td>AP, TV, broker terminals</td></tr>
-      <tr><td style="color:#fff;font-weight:700">Business Wire / PRN</td><td>$760–2,500+</td><td>400w + fees</td><td>1–3 days</td><td>AP, Reuters, Yahoo Finance, 2,500+ outlets</td></tr>
+  <h3 class="sec">Bottom line for the CEO</h3>
+  <div class="rank" style="margin-bottom:8px">
+    <table class="d">
+      <tr style="color:var(--pink2)"><td style="width:auto;color:var(--pink2)"><b>If the priority is…</b></td><td><b>Choose</b></td><td><b>Cost</b></td><td><b>Why</b></td></tr>
+      <tr><td style="color:#fff;font-weight:700">Live today + real AP</td><td>EIN Presswire</td><td>$149</td><td>Only same-day real-AP route; unbeatable value</td></tr>
+      <tr><td style="color:#fff;font-weight:700">Wall of "As Seen On" logos</td><td>BrandPush Authority</td><td>$595</td><td>AP + Business Insider + 5 more (affiliate, but the logos)</td></tr>
+      <tr><td style="color:#fff;font-weight:700">Real prestige, unlimited length</td><td>Accesswire National</td><td>$775</td><td>Genuine AP + terminals, no word/image fees</td></tr>
+      <tr><td style="color:#fff;font-weight:700">Flagship Yahoo Finance / IPO-grade</td><td>Business Wire</td><td>$1,500+</td><td>The only genuine flagship-terminal route</td></tr>
     </table>
   </div>
 
   <p class="fine">
-    Sources: <a class="src" href="https://www.einpresswire.com/faq">EIN Presswire FAQ (word limits)</a>,
-    <a class="src" href="https://www.einpresswire.com/how-it-works">EIN how-it-works (approval)</a>,
-    <a class="src" href="https://www.einpresswire.com/guide-pdf/EIN-Presswire-Pricing-Overview.pdf">EIN pricing/channels PDF</a>,
-    <a class="src" href="https://thriveonz360.com/solution/ein-presswire/">EIN same-day</a>,
-    <a class="src" href="https://www.brandpush.co/assets/doc/BrandPush-Writing-Template-Version1.docx">BrandPush word count</a>,
-    <a class="src" href="https://help.brandpush.co/en/articles/6988615-how-long-does-publishing-take">BrandPush turnaround</a>,
-    <a class="src" href="https://onesmartsheep.com/post/brandpush-review-the-ultimate-press-release-distribution-service">BrandPush channels/pricing</a>,
-    <a class="src" href="https://signalgenesys.com/accesswire-review/">Accesswire review</a>,
-    <a class="src" href="https://otc.accessnewswire.com/blog/press-releases-tips/press-release-distribution-cost">Accesswire channels/pricing</a>,
-    <a class="src" href="https://www.thesmbguide.com/accesswire">Accesswire unlimited words</a>,
+    Sources: <a class="src" href="https://www.einpresswire.com/pricing">EIN pricing & channels</a>,
+    <a class="src" href="https://www.einpresswire.com/faq">EIN FAQ (Yahoo Finance not included; word limits)</a>,
+    <a class="src" href="https://onesmartsheep.com/post/brandpush-review-the-ultimate-press-release-distribution-service">BrandPush review (packages, affiliate detail)</a>,
+    <a class="src" href="https://help.brandpush.co/en/articles/7970128-what-s-your-money-back-guarantee">BrandPush guarantee (per-package outlets)</a>,
+    <a class="src" href="https://help.brandpush.co/en/articles/7946560-what-are-the-prices-packages">BrandPush prices (Yahoo +$795)</a>,
+    <a class="src" href="https://www.openpr.com/news/3700406/brand-push-review-is-brandpush-legit-honest-view">BrandPush Authority = AP+BI</a>,
+    <a class="src" href="https://www.accessnewswire.com/specialguest/press-release-distribution">Accesswire National/Premium tiers</a>,
+    <a class="src" href="https://signalgenesys.com/accesswire-review/">Accesswire pricing/unlimited</a>,
     <a class="src" href="https://www.prezly.com/academy/business-wire-pricing">Business Wire pricing</a>,
     <a class="src" href="https://www.prezly.com/academy/pr-newswire-pricing">PR Newswire pricing</a>.
-    All require your budget go/no-go and a payment step. Turnaround assumes weekday-morning submission.
+    Guaranteed-publish services carry money-back guarantees; validity assumes weekday-morning submission. Affiliate placements carry the brand but are not the flagship newsroom.
   </p>
 </body>
 </html>
