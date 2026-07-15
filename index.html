@@ -46,6 +46,9 @@
   .copybtn:active{background:#1f6feb}
   .artlabel{color:var(--pink);font-weight:700;margin-top:14px;font-size:12px;text-transform:uppercase;letter-spacing:.05em}
   .skip{color:var(--mut);font-size:13px}
+  .limit{font-size:12.5px;font-weight:700;padding:6px 11px;border-radius:6px;margin:0 0 10px}
+  .limit.ok{background:rgba(35,134,54,.14);color:#7ee787;border:1px solid rgba(35,134,54,.4)}
+  .limit.warn{background:rgba(210,153,34,.14);color:#e3b341;border:1px solid rgba(210,153,34,.45)}
 </style>
 </head>
 <body>
@@ -91,12 +94,14 @@
     <div class="card"><h3>1) PR.com</h3>
       <a class="btn" href="https://admin.pr.com/create-account" target="_blank">Create account</a>
       <a class="btn alt" href="https://admin.pr.com/signin.php" target="_blank">Sign in</a>
+      <div class="limit ok">Length: no hard limit · paste the FULL body (~355 words / ~2,300 chars) ✓</div>
       <ol><li>Create account → solve reCAPTCHA → Sign Up.</li><li>Sign in → "Submit Press Release".</li><li>Paste fields → choose the <b>Free</b> package (look for $0/basic) → submit.</li></ol>
       <div class="blk"></div>
     </div>
 
     <div class="card"><h3>2) PRLog</h3>
       <a class="btn" href="https://www.prlog.org/pub/account.html" target="_blank">Create account</a>
+      <div class="limit ok">Length: no hard limit · paste the FULL body (~355 words) ✓</div>
       <a class="btn alt" href="https://www.prlog.org/pub/" target="_blank">Submit page</a>
       <ol><li>Create free account → solve image CAPTCHA.</li><li>Dashboard → "Submit Press Release" → paste → submit. Usually same-day live.</li></ol>
       <div class="blk"></div>
@@ -104,12 +109,14 @@
 
     <div class="card"><h3>3) openPR <span class="flag">— use company email, not Gmail</span></h3>
       <a class="btn" href="https://www.openpr.com/news/submit.html" target="_blank">Open submit form</a>
+      <div class="limit ok">Requires min ~1,700 chars · FULL body (~2,300 chars) ✓ qualifies</div>
       <ol><li>Public form, no account. Enter <b>omri.gitter@eteachergroup.com</b>.</li><li>Fill fields + <b>full postal address</b> + optional image → CAPTCHA → accept terms → Preview → Confirm.</li><li>Limit: 1 free / 30 days.</li></ol>
       <div class="blk"></div>
     </div>
 
     <div class="card"><h3>4) IssueWire</h3>
       <a class="btn" href="https://www.issuewire.com/signup" target="_blank">Sign up</a>
+      <div class="limit ok">Limit: 250–2,000 words · FULL body (~355 words) ✓ fits</div>
       <ol><li>Sign up → look for <b>"FIRST PR IS FREE NOW"</b> → reCAPTCHA → Get Started (free = $0.00).</li><li>Create → Optimize → Submit. Body 250–2000 words. Editor review before live.</li></ol>
       <div class="blk"></div>
     </div>
@@ -117,6 +124,7 @@
     <div class="card"><h3>5) 1888PressRelease <span class="skip">— uses the SHORT body (~300 words)</span></h3>
       <a class="btn" href="https://www.1888pressrelease.com/register_new.php" target="_blank">Register</a>
       <a class="btn alt" href="https://www.1888pressrelease.com/login.html" target="_blank">Login</a>
+      <div class="limit warn">Keep ~300 words → paste the SHORT body below ⚠ (full body is too long here)</div>
       <ol><li>Create free account → reCAPTCHA → Submit.</li><li>Login → "Submit Press Release" → paste the <b>SHORT version</b> (no ALL-CAPS headline) → submit for review.</li></ol>
       <div class="blk short"></div>
     </div>
@@ -124,18 +132,21 @@
     <div class="card"><h3>6) PRFree</h3>
       <a class="btn" href="https://prfree.org/members/register.php" target="_blank">Register</a>
       <a class="btn alt" href="https://prfree.org/members/login.php" target="_blank">Login</a>
+      <div class="limit ok">Length: no hard limit · paste the FULL body (~355 words) ✓</div>
       <ol><li>Register → accept terms → Cloudflare Turnstile → Create.</li><li>Login → submission tool → choose <b>Free</b> plan → submit. Instant publish.</li></ol>
       <div class="blk"></div>
     </div>
 
     <div class="card"><h3>7) PressReleasePoint</h3>
       <a class="btn" href="https://www.pressreleasepoint.com/" target="_blank">Open site</a>
+      <div class="limit ok">Length: no hard limit · paste the FULL body (~355 words) ✓</div>
       <ol><li>Click "Submit Free Press Release" → register/login → form → paste → CAPTCHA → submit.</li><li>Limit: 1 free / 3 months.</li></ol>
       <div class="blk"></div>
     </div>
 
     <div class="card"><h3>8) Free-Press-Release.com</h3>
       <a class="btn" href="https://www.free-press-release.com/" target="_blank">Open site</a>
+      <div class="limit ok">Limit: ≤3,000 chars · FULL body (~2,300 chars) ✓ fits</div>
       <ol><li>Register free account → Submit → headline, summary, body (≤3,000 chars basic), categories, media → submit.</li></ol>
       <div class="blk"></div>
     </div>
