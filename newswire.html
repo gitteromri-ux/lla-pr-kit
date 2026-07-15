@@ -67,12 +67,23 @@
   .sep{color:var(--line)}
   .not{color:#ffb3ae;font-size:13.5px;margin-top:10px;background:rgba(248,81,73,.08);border-left:3px solid var(--red);padding:8px 12px;border-radius:0 6px 6px 0}
   .verdict{color:#fff;background:rgba(219,97,162,.1);border-left:3px solid var(--pink);padding:10px 14px;border-radius:0 8px 8px 0;margin-top:14px;font-size:14px}
-  .artmatch{font-size:12.5px;font-weight:700;padding:7px 12px;border-radius:6px;margin:14px 0 2px}
+  .artmatch{font-size:14.5px;font-weight:700;padding:9px 14px;border-radius:6px;margin:16px 0 2px}
   .artmatch.ok{background:rgba(63,185,80,.14);color:#7ee787;border:1px solid rgba(63,185,80,.4)}
   .artmatch.warn{background:rgba(227,169,44,.14);color:#e3b341;border:1px solid rgba(227,169,44,.45)}
-  .actions{margin:14px 0 2px}
-  .actions .lab{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);font-weight:700;margin-bottom:7px}
-  .btn{display:inline-block;background:var(--pink);color:#fff;text-decoration:none;padding:9px 15px;border-radius:7px;font-weight:700;font-size:13.5px;margin:0 8px 8px 0}
+  .actions{margin:16px 0 2px}
+  .actions .lab{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut);font-weight:700;margin-bottom:8px}
+  .btn{display:inline-block;background:var(--pink);color:#fff;text-decoration:none;padding:11px 18px;border-radius:7px;font-weight:700;font-size:15px;margin:0 8px 8px 0}
+
+  /* Copy-paste article blocks */
+  .paste{margin:16px 0 4px;border:1px solid var(--pink);border-radius:10px;overflow:hidden}
+  .paste .ptitle{background:rgba(219,97,162,.16);color:#fff;font-weight:800;font-size:15px;padding:11px 16px;border-bottom:1px solid var(--pink)}
+  .fld{padding:12px 16px;border-bottom:1px solid var(--line)}
+  .fld:last-child{border-bottom:none}
+  .fld .flab{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--pink2);font-weight:800;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center}
+  .cpbtn{background:var(--pink);color:#fff;border:none;border-radius:6px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer}
+  .cpbtn:active{opacity:.8}
+  .cptext{background:#0b0f14;border:1px solid var(--line);border-radius:8px;padding:13px 15px;white-space:pre-wrap;font-size:15px;line-height:1.6;color:#e6edf3}
+  .cnt{font-size:12px;color:var(--mut);font-weight:600}
   .btn.alt{background:transparent;border:1px solid var(--pink);color:var(--pink2)}
   .btn:hover{opacity:.9}
   h3.sec{font-size:16px;margin:28px 0 10px;border-bottom:1px solid var(--line);padding-bottom:6px;color:var(--pink2)}
@@ -125,7 +136,8 @@
         <tr><td>How soon live</td><td><span class="chip c-fast">Same day / within hours</span> &nbsp;Google News in ~15 min. First-time account verification up to 2 business days — start now.</td></tr>
         <tr><td>Approval</td><td>Free account → paste release → ~2h editorial review (business hrs ET) → distributed → report emailed 2–4h later.</td></tr>
       </table>
-      <div class="artmatch ok">Article: limit 700 words (Basic) · paste the <b>FULL body (~355 words)</b> from the Submission Kit tab ✓ fits. Headline ≤120 chars, no ALL-CAPS.</div>
+      <div class="artmatch ok">Article: limit 700 words (Basic) · <b>FULL body (~355 words)</b> ✓ fits. Headline ≤120 chars, no ALL-CAPS.</div>
+      <div class="paste" data-body="full"></div>
       <div class="outlets">
         <div class="otitle">Where your release actually appears (online):</div>
         <div class="olist">
@@ -183,7 +195,8 @@
         <tr><td>How soon live</td><td><span class="chip c-slow">2–7 business days</span> &nbsp;No same-day. No weekends. Yahoo add-on +4 days.</td></tr>
         <tr><td>Approval</td><td>Order + upload → BrandPush team publishes across network → verifies live pages → sends full URL report.</td></tr>
       </table>
-      <div class="artmatch ok">Article: 350–800 words · paste the <b>FULL body (~355 words)</b> ✓ fits. Headline 8–20 words, summary ≤45 words, max 5 links.</div>
+      <div class="artmatch ok">Article: 350–800 words · <b>FULL body (~355 words)</b> ✓ fits. Headline 8–20 words, summary ≤45 words, max 5 links.</div>
+      <div class="paste" data-body="full"></div>
       <div class="outlets">
         <div class="otitle">POPULAR ($265) — where it appears (online):</div>
         <div class="olist">
@@ -259,6 +272,7 @@
         <tr><td>Approval</td><td>Account → submit (unlimited length) → editorial pass → AP + outlet distribution → analytics report.</td></tr>
       </table>
       <div class="artmatch ok">Article: <b>unlimited words</b> · paste the <b>FULL body</b>, or expand it with extra detail/quotes at no cost ✓.</div>
+      <div class="paste" data-body="full"></div>
       <div class="outlets">
         <div class="otitle">NATIONAL ($775) — where it appears (online):</div>
         <div class="olist">
@@ -314,6 +328,7 @@
         <tr><td>Approval</td><td>Quote/contract → submit → editorial + compliance review → wire distribution. PRN needs $195/yr membership first.</td></tr>
       </table>
       <div class="artmatch warn">Article: <b>400 words included</b>, then paid per extra 100 words. The <b>FULL body (~355 words)</b> fits under the base ✓ — do NOT expand it here or the price jumps.</div>
+      <div class="paste" data-body="full"></div>
       <div class="outlets">
         <div class="otitle">Where it appears (online, GlobeNewswire US National — representative):</div>
         <div class="olist">
@@ -368,5 +383,52 @@
     <a class="src" href="https://www.prezly.com/academy/business-wire-pricing">Business Wire pricing</a>.
     Online coverage only. Guaranteed-publish services carry money-back guarantees; validity assumes weekday-morning submission.
   </p>
+
+<script>
+const HEADLINE=`eTeacher Group enters $8 trillion longevity market with Longevity Life Academy`;
+const SUMMARY=`eTeacher Group launches Longevity Life Academy, its fifth online school, bringing live teacher-led instruction and AI micro-learning to the science of healthy aging.`;
+const CATEGORY=`Health & Wellness`;
+const BODY=`Ramat Gan, Israel, July 12, 2026 — eTeacher Group, one of the world's longest-running online education companies, today announced its entry into the longevity market with Longevity Life Academy (LLA), its fifth proprietary online school. LLA brings eTeacher's model of live, teacher-led instruction paired with AI micro-learning to the science of healthy aging.
+
+The timing is deliberate. UBS projects the longevity market will reach roughly $8 trillion by 2030, up from $5.3 trillion in 2023, yet many offerings sit at two extremes: costly concierge clinics or unvetted social-media advice. eTeacher is entering the underserved middle with a structured educational program. The company serves more than 10,000 learners a year, with roughly 70% of its customers in the United States.
+
+LLA's flagship program, "The Longevity Blueprint," is an 18-week live course comprising 18 sessions across four phases. Weekly sessions run for 50 minutes in groups of eight to 15 students. Every student receives an Abbott Lingo continuous glucose monitor, shipped to their US home before Lesson 5, so learning is grounded in their own body data.
+
+The course is taught by named instructors, including researcher Natalie Blackbourne and UC Santa Barbara senior lecturer Amy Jamieson, on the same platform behind eTeacher's accredited work with the Hebrew University of Jerusalem.
+
+"The world of education was stuck for hundreds of years, but in the age of artificial intelligence it is undergoing a dramatic transformation," said Harel Tayeb, CEO of eTeacher Group. "We believe we can bring the world of longevity into every household in the United States and raise healthspan globally."
+
+The Longevity Blueprint is enrolling now from $289 per month. eTeacher says additional longevity courses and a companion practice app are on its roadmap for the year ahead.
+
+About eTeacher Group
+eTeacher Group is a global online education company with 25 years of experience delivering live, teacher-led learning. It has delivered more than 400,000 courses to students across nearly 200 countries and operates proprietary online schools. Longevity Life Academy is its fifth proprietary school.`;
+const CONTACT=`Omri Gitter, Project Manager, eTeacher Group
+Email: omri.gitter@eteachergroup.com
+Phone: +972 3 755 4169
+Website: https://www.longevitylifeacademy.com/
+Address: 8 Oholiav St., Ramat Gan 52522, Israel`;
+const IMG=`https://www.longevitylifeacademy.com/assets/hero-cgm.jpg`;
+
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;');}
+function wc(s){return s.trim().split(/\s+/).length;}
+function fld(lbl,val,meta){
+  return `<div class="fld"><div class="flab"><span>${lbl}${meta?` <span class="cnt">(${meta})</span>`:''}</span><button class="cpbtn" onclick="cpb(this)">Copy</button></div><div class="cptext">${esc(val)}</div></div>`;
+}
+document.querySelectorAll('.paste').forEach(p=>{
+  const bodyWords=wc(BODY), bodyChars=BODY.length;
+  p.innerHTML =
+    `<div class="ptitle">Ready to paste — this outlet's exact article</div>`+
+    fld('Headline', HEADLINE, HEADLINE.length+' chars')+
+    fld('Summary / sub-headline', SUMMARY, wc(SUMMARY)+' words')+
+    fld('Category', CATEGORY, '')+
+    fld('Body', BODY, bodyWords+' words · '+bodyChars+' chars')+
+    fld('Media contact (paste at end)', CONTACT, '')+
+    fld('Image URL (upload or link)', IMG, '');
+});
+function cpb(btn){
+  const t=btn.parentElement.parentElement.querySelector('.cptext').innerText;
+  navigator.clipboard.writeText(t).then(()=>{const o=btn.textContent;btn.textContent='Copied ✓';setTimeout(()=>btn.textContent=o,1400);});
+}
+</script>
 </body>
 </html>
