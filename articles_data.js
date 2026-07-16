@@ -1,7 +1,7 @@
 // All 22 ready-to-paste articles from the eTeacher / LLA PR campaign deck.
 // Each: chapter, id, kicker, targets, headline, subhead, body, ceoQuote, julieQuote (optional), note (optional)
 const CHAPTERS = [
-  {n:"Chapter 1 of 4", title:"eTeacher Launches Longevity Life Academy", msg:"Israel's leading EdTech group brings live, science-backed longevity education to American homes.", color:"h1c"},
+  {n:"Chapter 1 of 4", title:"eTeacher Launches Longevity Life Academy", msg:"A leading global EdTech group brings live, science-backed longevity education to American homes.", color:"h1c"},
   {n:"Chapter 2 of 4", title:"Julie Joins eTeacher's Longevity Life Academy", msg:"The single mom who out-aged the billionaires now teaches live for eTeacher.", color:"h2c"},
   {n:"Chapter 3 of 4", title:"The Longevity Hub App (Roadmap)", msg:"eTeacher's longevity practice, in your pocket — a planned AI tutor and daily rituals.", color:"h3c"},
   {n:"Chapter 4 of 4", title:"Six New Longevity Courses (Roadmap)", msg:"eTeacher is building a full longevity college — not a single course.", color:"h4c"},
@@ -13,14 +13,14 @@ const ARTICLES = [
     chapter:0, id:"1.1", kicker:"Flagship national-wire announcement",
     targets:"PR Newswire (national wire) → Forbes / Bloomberg pickup",
     headline:"eTeacher Group Launches Longevity Life Academy — an 18-Week Live Course That Ships a Glucose Monitor to Every Student",
-    subhead:"After 25 years and 400,000+ courses across nearly 200 countries, the Israeli education company opens its fifth online school — an 18-week live longevity program, with a continuous glucose monitor shipped to every student.",
-    body:`RAMAT GAN, Israel — eTeacher Group, one of the world's longest-running online-education companies, today announced its entry into the longevity market with Longevity Life Academy (LLA), its fifth proprietary online school. LLA brings eTeacher's signature model — live, teacher-led instruction paired with AI micro-learning — to the science of healthy aging.
+    subhead:"After 25 years and 400,000+ courses across nearly 200 countries, the global education company opens its fifth online school — an 18-week live longevity program, with a continuous glucose monitor shipped to every student.",
+    body:`FOR IMMEDIATE RELEASE — eTeacher Group, one of the world's longest-running online-education companies, today announced its entry into the longevity market with Longevity Life Academy (LLA), its fifth proprietary online school. LLA brings eTeacher's signature model — live, teacher-led instruction paired with AI micro-learning — to the science of healthy aging.
 
 The timing is deliberate. UBS projects the longevity market will reach roughly $8 trillion by 2030, up from $5.3 trillion in 2023, yet most offerings sit at two extremes: costly concierge clinics or unvetted social-media advice. eTeacher enters the underserved middle, with more than 10,000 learners a year and roughly 70% of its customers in the US.
 
 LLA's flagship program, "The Longevity Blueprint," is an 18-week live course — 18 sessions across four phases, 50 minutes weekly, in groups of 8–15 — that turns healthy-aging science into one personalized protocol each student can live by. Every student receives an Abbott Lingo continuous glucose monitor, shipped to their US home before Lesson 5, so learning is grounded in their own body data.
 
-The course is taught by named instructors, including researcher Natalie Blackbourne and UC Santa Barbara senior lecturer Amy Jamieson, on the same platform behind eTeacher's accredited work with the Hebrew University of Jerusalem.
+The course is taught by named instructors, including researcher Natalie Blackbourne and UC Santa Barbara senior lecturer Amy Jamieson, on the same platform behind eTeacher's accredited work with a leading research university.
 
 The Longevity Blueprint is enrolling now from $289 per month, and eTeacher says additional longevity courses and a companion practice app are on its roadmap for the year ahead.`,
     ceoQuote:`For twenty-five years we have taught one thing well: real people learn from real teachers, live, in small groups. We are now pointing that method at the question that matters most — how to add healthy years to a life. Longevity has been sold as a luxury. We intend to make it a habit anyone can keep.`,
@@ -31,13 +31,13 @@ The Longevity Blueprint is enrolling now from $289 per month, and eTeacher says 
     targets:"EdSurge / EdTech Magazine / TechCrunch",
     headline:"eTeacher Brings Its 25-Year Live-Class Teaching Method to Longevity Life Academy",
     subhead:"The company that taught languages to 400,000+ learners is betting its small-class, live-teaching model can crack the hardest problem in wellness — actually sticking with it.",
-    body:`RAMAT GAN, Israel — eTeacher Group built its 25-year reputation on one idea: real teachers, live, in small classes, backed by short daily AI practice between sessions. With Longevity Life Academy, the company is applying that methodology to a brand-new subject — living longer.
+    body:`FOR IMMEDIATE RELEASE — eTeacher Group built its 25-year reputation on one idea: real teachers, live, in small classes, backed by short daily AI practice between sessions. With Longevity Life Academy, the company is applying that methodology to a brand-new subject — living longer.
 
 It is a pointed answer to an industry problem. Self-guided wellness content is abundant, but completion is not; eTeacher argues that longevity, like language, is a practice that fails without persistence. Its model pairs a weekly live "anchor" session with an expert and short daily practice between classes.
 
 In Longevity Life Academy, that means an 18-week live cohort of 8–15 students, 50 minutes weekly across four phases, plus guided daily experiments tied to each student's own glucose, sleep, and movement data. An Abbott Lingo continuous glucose monitor ships to every US student before Lesson 5, turning abstract lessons into personal feedback loops.
 
-The academy runs on eTeacher's purpose-built platform and small-cohort structure — the same infrastructure behind its accredited courses with the Hebrew University of Jerusalem — taught by named instructors such as nutrition coach Courtney Donofrio and behavioral specialist Jordan Lattimore.
+The academy runs on eTeacher's purpose-built platform and small-cohort structure — the same infrastructure behind its accredited courses with a leading research university — taught by named instructors such as nutrition coach Courtney Donofrio and behavioral specialist Jordan Lattimore.
 
 eTeacher says an AI longevity tutor and a companion practice app are on the roadmap, extending the daily-engagement layer across its five schools.`,
     ceoQuote:`Information about living longer is everywhere and almost no one follows through. The hard part was never the science — it was staying with it. Our whole model exists to solve that: a live teacher, a small class, and a small step you actually take before the next session.`,
@@ -48,7 +48,7 @@ eTeacher says an AI longevity tutor and a companion practice app are on the road
     targets:"Bloomberg / Business Insider / CNBC",
     headline:"Longevity Life Academy Targets the Underserved Middle of the $8 Trillion Longevity Market",
     subhead:"With 70% of its customers already in the US, eTeacher positions Longevity Life Academy between costly clinics and free advice — the underserved middle of an $8 trillion market, starting at $289 a month.",
-    body:`RAMAT GAN, Israel — eTeacher Group is entering one of consumer health's fastest-growing categories, launching Longevity Life Academy to occupy a gap its CEO argues no one serves well: the space between expensive concierge clinics and free, unverified online advice.
+    body:`FOR IMMEDIATE RELEASE — eTeacher Group is entering one of consumer health's fastest-growing categories, launching Longevity Life Academy to occupy a gap its CEO argues no one serves well: the space between expensive concierge clinics and free, unverified online advice.
 
 The opportunity is large and split. UBS values the longevity market at $5.3 trillion in 2023, rising toward $8 trillion by 2030, while the narrower healthspan-product market is estimated at $25 billion-plus today, growing toward roughly $63 billion by 2035, per Market Research Future. Yet affordability and rigor rarely coexist in one offering.
 
@@ -65,7 +65,7 @@ eTeacher plans to broaden the catalog with additional longevity courses over the
     targets:"Longevity.Technology / Fierce Healthcare / MedCity News",
     headline:"Longevity Life Academy Puts a Continuous Glucose Monitor in Every Student's Hands",
     subhead:"eTeacher's new school makes personal biomarker data — not generic advice — the core of an 18-week, six-pillar curriculum.",
-    body:`RAMAT GAN, Israel — Longevity Life Academy is built on a Medicine 3.0 premise: your protocol should come from your own biology, not a generic checklist. To make that concrete, eTeacher Group is shipping an Abbott Lingo continuous glucose monitor, plus full Lingo app access, to every student — included with the course and arriving before the CGM module in Lesson 5.
+    body:`FOR IMMEDIATE RELEASE — Longevity Life Academy is built on a Medicine 3.0 premise: your protocol should come from your own biology, not a generic checklist. To make that concrete, eTeacher Group is shipping an Abbott Lingo continuous glucose monitor, plus full Lingo app access, to every student — included with the course and arriving before the CGM module in Lesson 5.
 
 That biomarker-first design sets the program apart. Where much longevity content offers one-size-fits-all rules, LLA teaches across six pillars — Nutrition, Sleep, Exercise & Movement, Supplements & Wearables, Stress Management, and a personal Longevity Protocol — with students reading their own glucose, HRV, and sleep data as a live feedback loop.
 
@@ -78,28 +78,28 @@ eTeacher says wearable integration will deepen as its longevity courses expand o
     note:"NET-NEW CEO statement — flagged for Harel's approval. Fresh in his voice; does NOT reuse the published 'cognitive atrophy' line."
   },
   {
-    chapter:0, id:"1.5", kicker:"Israel innovation-nation — \"Wiz of edtech\" + Israel image",
-    targets:"TheMarker / Calcalist / Globes / Times of Israel",
-    headline:"Israel's 25-Year-Old eTeacher Group Opens Longevity Life Academy, Its Fifth Online School",
-    subhead:"The company behind five global online schools — and an ambition to become the \"Wiz of edtech\" — brings Israeli education technology to the world's fastest-growing wellness market.",
-    body:`RAMAT GAN, Israel — eTeacher Group, the 25-year-old Israeli education company profiled by TheMarker earlier this year, is extending its "Wiz of edtech" ambition into longevity with the launch of Longevity Life Academy, its fifth online school.
+    chapter:0, id:"1.5", kicker:"Company-milestone / \"Wiz of edtech\" ambition",
+    targets:"EdSurge / EdTech Magazine / Business Insider / TechCrunch",
+    headline:"25-Year-Old eTeacher Group Opens Longevity Life Academy, Its Fifth Online School",
+    subhead:"The company behind five global online schools — and an ambition to become the \"Wiz of edtech\" — brings its proven live-learning technology to the world's fastest-growing wellness market.",
+    body:`FOR IMMEDIATE RELEASE — eTeacher Group, a 25-year-old global education company, is extending its "Wiz of edtech" ambition into longevity with the launch of Longevity Life Academy, its fifth online school.
 
-The move plants an Israeli flag in a category UBS projects will reach $8 trillion by 2030. eTeacher already serves more than 10,000 learners a year across five schools — from Biblical Hebrew and modern Hebrew to French culture — and now healthspan, with roughly 70% of its customers in the United States.
+The move stakes a claim in a category UBS projects will reach $8 trillion by 2030. eTeacher already serves more than 10,000 learners a year across five schools — spanning languages, culture, and now healthspan — with roughly 70% of its customers in the United States.
 
-eTeacher's differentiator is a model built in Israel and exported worldwide: live experts in small groups of 8–15, paired with AI micro-learning, and courses developed in an academic-partnership tradition that includes the Hebrew University of Jerusalem. In longevity, that method anchors an 18-week live program with an Abbott Lingo glucose monitor shipped to every US student.
+eTeacher's differentiator is a model refined over decades and exported worldwide: live experts in small groups of 8–15, paired with AI micro-learning, and courses developed in a rigorous academic-partnership tradition. In longevity, that method anchors an 18-week live program with an Abbott Lingo glucose monitor shipped to every US student.
 
-For CEO Harel Tayeb, the company's global reach is also a form of soft power. He has described how eTeacher's work abroad "generates discourse about our deep roots" and creates "positive sentiment and wonderful image reinforcement for Israel."
+For CEO Harel Tayeb, the company's global reach is a competitive advantage few edtech firms can match: a quarter-century of operating live cohorts at scale, a proven billing and retention engine, and a base of learners in nearly 200 countries.
 
-eTeacher says a companion practice app and additional longevity courses are on the roadmap for the coming year, deepening the school's Israeli-built technology stack.`,
-    ceoQuote:`This is an Israeli method, taught to learners in nearly two hundred countries. We are proud of that — quietly. What we care about is whether a person in Ohio or Osaka finishes the course healthier and more capable than they started. Longevity is the most human subject we have ever taught, and it deserves our best work.`,
-    note:"NET-NEW CEO statement — flagged for Harel's approval. Fresh in his voice; the mid-body 'image reinforcement for Israel' phrase remains verbatim from TheMarker Q7."
+eTeacher says a companion practice app and additional longevity courses are on the roadmap for the coming year, deepening the school's technology stack.`,
+    ceoQuote:`We have spent twenty-five years proving that people learn best from real teachers, live, in small groups — in nearly two hundred countries. What we care about is whether a person in Ohio or Osaka finishes the course healthier and more capable than they started. Longevity is the most human subject we have ever taught, and it deserves our best work.`,
+    note:"Per CEO directive, this article was reframed from its original national-angle version to a neutral global-EdTech milestone and retargeted to global business/edtech outlets. CEO quote is NET-NEW — flagged for Harel's approval."
   },
   {
     chapter:0, id:"1.6", kicker:"Consumer / human — longevity for every household, accessibility",
     targets:"Well+Good / mindbodygreen / Today / People",
     headline:"Longevity Life Academy Offers an 18-Week Live Longevity Class With a Glucose Monitor Included",
     subhead:"Longevity Life Academy wants to make the science of healthy aging as approachable as a weekly class — for 8–15 students at a time, glucose monitor included.",
-    body:`RAMAT GAN, Israel — Longevity has a reputation for being expensive and intimidating. Longevity Life Academy, the new fifth school from 25-year education company eTeacher Group, is built to be the opposite: a live, 18-week course in groups of 8–15, with an instructor who knows your name and a glucose monitor shipped to your door.
+    body:`FOR IMMEDIATE RELEASE — Longevity has a reputation for being expensive and intimidating. Longevity Life Academy, the new fifth school from 25-year education company eTeacher Group, is built to be the opposite: a live, 18-week course in groups of 8–15, with an instructor who knows your name and a glucose monitor shipped to your door.
 
 The pitch lands against a stark backdrop. As the longevity market races toward $8 trillion by 2030 (UBS), its highest-profile figures spend fortunes chasing extra years — leaving most households watching from the sidelines. LLA is designed for those households, with tuition starting from $289 per month.
 
@@ -234,7 +234,7 @@ Segment availability aligns with LLA's current enrollment window, with the gluco
     targets:"TechCrunch / The Verge / PR Newswire",
     headline:"eTeacher to Launch the Longevity Hub: A Planned AI Tutor and Daily-Ritual Engine for Healthspan",
     subhead:"The upcoming companion app will turn the 18-week Longevity Blueprint into simple, trackable daily rituals — guided by an AI longevity tutor built on eTeacher's \"gym for the brain\" model.",
-    body:`RAMAT GAN, Israel — eTeacher Group today previewed the Longevity Hub, a companion app on its roadmap that will extend Longevity Life Academy beyond the weekly live class. The Hub is designed to deliver a personalized longevity practice as bite-size daily rituals, integrated tracking, and lifestyle guidance.
+    body:`FOR IMMEDIATE RELEASE — eTeacher Group today previewed the Longevity Hub, a companion app on its roadmap that will extend Longevity Life Academy beyond the weekly live class. The Hub is designed to deliver a personalized longevity practice as bite-size daily rituals, integrated tracking, and lifestyle guidance.
 
 The app targets the field's real failure point. Longevity advice is everywhere, but daily follow-through is rare; eTeacher plans to attack that gap the same way it does in language learning — through short, engaging daily practice rather than more content to ignore.
 
@@ -251,7 +251,7 @@ eTeacher says the Longevity Hub is planned for release in the year ahead, with t
     targets:"Fast Company / Wired / mindbodygreen",
     headline:"eTeacher's Planned Longevity Hub App Will Use AI to Turn the Longevity Blueprint Into Daily Habits",
     subhead:"The upcoming Longevity Hub will break healthspan into daily micro-rituals — because the science only works if you actually stick with it.",
-    body:`RAMAT GAN, Israel — The hardest part of longevity isn't knowing what to do — it's doing it every day. eTeacher Group's planned Longevity Hub app is being designed squarely around that persistence problem, converting the 18-week Longevity Blueprint into small, daily, trackable actions.
+    body:`FOR IMMEDIATE RELEASE — The hardest part of longevity isn't knowing what to do — it's doing it every day. eTeacher Group's planned Longevity Hub app is being designed squarely around that persistence problem, converting the 18-week Longevity Blueprint into small, daily, trackable actions.
 
 It is a bet grounded in the company's own data across five schools: eTeacher argues that engagement, not information, is the real bottleneck in adult learning, and that unlimited self-guided content is precisely what drives people to quit.
 
@@ -269,7 +269,7 @@ eTeacher expects to roll out the Longevity Hub in the year ahead, alongside a br
     targets:"PR Newswire → EdSurge / Longevity.Technology",
     headline:"eTeacher to Add Six New Longevity Courses Following Its Q2 Longevity Life Academy Debut",
     subhead:"The planned expansion turns a single flagship course into a full longevity curriculum — six new programs spanning metabolic health, movement, biomarkers, and brain training.",
-    body:`RAMAT GAN, Israel — Building on the Q2 launch of its flagship 18-week course, The Longevity Blueprint, eTeacher Group today announced six new Longevity Life Academy courses planned to roll out over the coming year.
+    body:`FOR IMMEDIATE RELEASE — Building on the Q2 launch of its flagship 18-week course, The Longevity Blueprint, eTeacher Group today announced six new Longevity Life Academy courses planned to roll out over the coming year.
 
 The expansion answers demand created by a market UBS projects will reach $8 trillion by 2030, and it reflects eTeacher's view that longevity is a lifelong practice rather than a single class. The six upcoming courses are: Emotional Resilience & Stress; Metabolic Mastery; Activities & Movement: Athlete-Level Performance; Longevity Blueprint 2, a continuation of the flagship; Biomarkers & Advanced Wearables; and Longevity Brain, which trains the brain like the body and adds social health and relationships.
 
@@ -286,7 +286,7 @@ eTeacher says the six courses are on its roadmap for the year following the Q2 d
     targets:"Well+Good / mindbodygreen / psychology-forward outlets",
     headline:"eTeacher Plans Six New Longevity Life Academy Courses in Brain Training, Metabolism, Movement and Biomarkers",
     subhead:"The upcoming curriculum treats memory, focus, emotional health, and relationships as trainable longevity levers — turning a single course into a multi-phase journey.",
-    body:`RAMAT GAN, Israel — As eTeacher Group maps out its six planned Longevity Life Academy courses, one stands out as the most distinctly eTeacher: Longevity Brain, a program that will treat cognitive and social health as core longevity practices rather than afterthoughts.
+    body:`FOR IMMEDIATE RELEASE — As eTeacher Group maps out its six planned Longevity Life Academy courses, one stands out as the most distinctly eTeacher: Longevity Brain, a program that will treat cognitive and social health as core longevity practices rather than afterthoughts.
 
 The design reflects a broader idea about how longevity should be taught — as a sequenced journey, not a one-off. Students would begin with the flagship 18-week Longevity Blueprint, then progress through specialized courses like Metabolic Mastery, Athlete-Level Performance, and Biomarkers & Advanced Wearables, each in the same live, 8–15-student cohort format.
 
@@ -304,7 +304,7 @@ eTeacher says the full learning journey is planned for the year following the Q2
     targets:"Business Insider / Fortune Well / CNBC Make It",
     headline:"Bryan Johnson Spends $2 Million a Year — Longevity Life Academy Teaches the Same Healthy-Aging Habits, Live, From $289 a Month",
     subhead:"As the world's most-watched biohacker faces an incurable diagnosis, eTeacher's Longevity Life Academy makes its case: healthspan is built through consistent, learnable habits — taught live — not through spending most people could never match.",
-    body:`RAMAT GAN, Israel — This month, biohacker Bryan Johnson disclosed that he has been diagnosed with autoimmune gastritis, an incurable condition he says medicine can only manage. His candor deserves respect; illness spares no one. But it sharpens a question millions are now asking: if the most expensive longevity routine on earth can't guarantee an outcome, what should the rest of us actually do?
+    body:`FOR IMMEDIATE RELEASE — This month, biohacker Bryan Johnson disclosed that he has been diagnosed with autoimmune gastritis, an incurable condition he says medicine can only manage. His candor deserves respect; illness spares no one. But it sharpens a question millions are now asking: if the most expensive longevity routine on earth can't guarantee an outcome, what should the rest of us actually do?
 
 Longevity Life Academy, the fifth online school of 25-year education company eTeacher Group, was built for exactly that question. Its answer is not a bigger budget — it is a better teacher. The academy's 18-week live course turns healthy-aging science into one personalized protocol a student keeps for life, taught in small groups of 8–15 by named instructors and grounded in each student's own body data.
 
@@ -321,7 +321,7 @@ Longevity Life Academy is enrolling now from $289 per month, with additional cou
     targets:"Fortune Well / Healthline / MedCity News",
     headline:"Bryan Johnson's Diagnosis Hid for Years — Longevity Life Academy Teaches Students to Read Their Own Biomarkers Early",
     subhead:"Bryan Johnson's autoimmune gastritis went undetected for years despite intensive monitoring. Longevity Life Academy is built on a simpler premise: teach ordinary people to read their own body data, consistently, before problems compound.",
-    body:`RAMAT GAN, Israel — One detail in Bryan Johnson's recent disclosure resonated with clinicians: even with elite monitoring, his autoimmune gastritis stayed hidden for years, surfacing only after persistent low iron was finally investigated. If a condition can hide from the world's most-tracked body, the case for teaching everyone to read their own data grows stronger, not weaker.
+    body:`FOR IMMEDIATE RELEASE — One detail in Bryan Johnson's recent disclosure resonated with clinicians: even with elite monitoring, his autoimmune gastritis stayed hidden for years, surfacing only after persistent low iron was finally investigated. If a condition can hide from the world's most-tracked body, the case for teaching everyone to read their own data grows stronger, not weaker.
 
 That is the founding premise of Longevity Life Academy, the fifth online school of 25-year education company eTeacher Group. The academy does not promise to out-spend disease. It teaches students to understand their own biomarkers — glucose, sleep, movement, and the numbers on their own lab reports — so they become active participants in their health rather than passive patients.
 
@@ -338,7 +338,7 @@ Longevity Life Academy is enrolling now from $289 per month.`,
     targets:"People / Yahoo Life / Today",
     headline:"Her $12-a-Day Routine Ranked Ahead of Bryan Johnson — Longevity Life Academy Teaches the Habits Behind It",
     subhead:"Longevity Life Academy founding faculty member Julie Gibson Clark once ranked second in the Rejuvenation Olympics — ahead of Bryan Johnson — on a fraction of the budget. As Johnson faces a hard diagnosis, her story shows what consistency can do.",
-    body:`RAMAT GAN, Israel — The longevity conversation is at an inflection point. Bryan Johnson, its most famous figure, recently shared that he has an incurable autoimmune condition — a sobering reminder that spending is not the same as certainty. Longevity Life Academy, eTeacher Group's fifth online school, offers a quieter counter-story that predates the news.
+    body:`FOR IMMEDIATE RELEASE — The longevity conversation is at an inflection point. Bryan Johnson, its most famous figure, recently shared that he has an incurable autoimmune condition — a sobering reminder that spending is not the same as certainty. Longevity Life Academy, eTeacher Group's fifth online school, offers a quieter counter-story that predates the news.
 
 Julie Gibson Clark, a 56-year-old single mother and former structural engineer from Phoenix, held the number-two position in the Rejuvenation Olympics for more than a year — ranking ahead of Johnson — while spending roughly $12 a day. Her DunedinPACE score of 0.665 indicated a pace of aging roughly a third slower than expected. She did it with sleep, nutrition, movement, and stress habits, kept consistently.
 
@@ -355,7 +355,7 @@ Longevity Life Academy is enrolling now from $289 per month.`,
     targets:"Newsweek / USA Today opinion / Fast Company",
     headline:"You Don't Need Bryan Johnson's Budget to Live Longer — Longevity Life Academy Puts Science-Backed Healthy Aging Within Reach",
     subhead:"The biohacking headlines make longevity look like a billionaire's hobby. eTeacher's Longevity Life Academy exists to prove the opposite — that the science is teachable, and the habits are affordable.",
-    body:`RAMAT GAN, Israel — Every few months, longevity returns to the headlines through a single extraordinary figure and an extraordinary budget. The latest news — Bryan Johnson's disclosure of an incurable autoimmune condition — is a human moment first, and we wish him well. It is also a chance to correct a widespread misconception: that living longer is a game only the wealthy can play.
+    body:`FOR IMMEDIATE RELEASE — Every few months, longevity returns to the headlines through a single extraordinary figure and an extraordinary budget. The latest news — Bryan Johnson's disclosure of an incurable autoimmune condition — is a human moment first, and we wish him well. It is also a chance to correct a widespread misconception: that living longer is a game only the wealthy can play.
 
 Longevity Life Academy, the fifth online school of 25-year education company eTeacher Group, is built on the opposite conviction. The science of healthy aging — sleep, nutrition, movement, stress, and personal biomarkers — is not proprietary to the rich. What most people lack is not money; it is a teacher, a structure, and the support to stay consistent.
 
@@ -372,7 +372,7 @@ Longevity Life Academy is enrolling now from $289 per month.`,
     targets:"EdSurge / Fast Company / Longevity.Technology",
     headline:"Where Bryan Johnson Experiments Alone, Longevity Life Academy Bets on Live Teachers — Because Habits Stick When Someone Teaches You",
     subhead:"The most famous longevity story is a solo experiment run at enormous cost. eTeacher's Longevity Life Academy is the opposite model: live teachers, small classes, and a structure built so ordinary people actually stay the course.",
-    body:`RAMAT GAN, Israel — Bryan Johnson's Blueprint is the defining image of modern longevity: one person, a large team, and a vast budget, self-experimenting in public. His openness has taught the field a great deal, and his recent autoimmune-gastritis diagnosis is a reminder of how hard the work is even at that scale. But it raises a practical question for everyone else: what works when you don't have a lab and millions to spend?
+    body:`FOR IMMEDIATE RELEASE — Bryan Johnson's Blueprint is the defining image of modern longevity: one person, a large team, and a vast budget, self-experimenting in public. His openness has taught the field a great deal, and his recent autoimmune-gastritis diagnosis is a reminder of how hard the work is even at that scale. But it raises a practical question for everyone else: what works when you don't have a lab and millions to spend?
 
 eTeacher Group's answer, delivered through its fifth online school, Longevity Life Academy, is decades old and simple: people learn best from teachers, live, in small groups. Where solo biohacking asks individuals to self-direct, LLA provides a weekly live anchor session, an expert instructor, a cohort of 8–15 peers, and short daily practice — the structure that turns intentions into habits.
 
