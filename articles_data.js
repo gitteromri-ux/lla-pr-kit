@@ -390,9 +390,9 @@ const SHARED = {
   category:"Health & Wellness  (priority: Health & Wellness → Education → Business)",
   image:"https://www.longevitylifeacademy.com/assets/hero-cgm.jpg",
   imageAlt:"Continuous glucose monitor beside a smartphone displaying personalized health data",
-  contact:`Omri Gitter, Project Manager, eTeacher Group
+  contact:`Omri Gitter, Marketing, eTeacher Group
 Email: omri.gitter@eteachergroup.com
-Phone: +972 3 755 4169
-Website: https://www.longevitylifeacademy.com/
-Address: 8 Oholiav St., Ramat Gan 52522, Israel`
+Phone (media / reporters): +972 3 755 4169
+General / US line: +1-888-230-5110
+Website: https://www.longevitylifeacademy.com/`
 };
