@@ -12,103 +12,103 @@ const ARTICLES = [
   {
     chapter:0, id:"1.1", kicker:"Flagship national-wire announcement",
     targets:"PR Newswire (national wire) → Forbes / Bloomberg pickup",
-    headline:"eTeacher Group Launches Longevity Life Academy — an 18-Week Live Course That Ships a Glucose Monitor to Every Student",
-    subhead:"After 25 years and 400,000+ courses across nearly 200 countries, the global education company opens its fifth online school — an 18-week live longevity program, with a continuous glucose monitor shipped to every student.",
-    body:`FOR IMMEDIATE RELEASE — eTeacher Group, one of the world's longest-running online-education companies, today announced its entry into the longevity market with Longevity Life Academy (LLA), its fifth proprietary online school. LLA brings eTeacher's signature model — live, teacher-led instruction paired with AI micro-learning — to the science of healthy aging.
+    headline:"25-Year-Old Global Education Company eTeacher Group Enters the $8 Trillion Longevity Market With Longevity Life Academy",
+    subhead:"eTeacher Group — 400,000+ courses delivered across nearly 200 countries — opens its fifth online school and makes science-backed longevity genuinely accessible: not through price alone, but through the teaching method it spent 25 years perfecting — bite-size daily learning, live expert instruction, a real cohort, and habits engineered to stick.",
+    body:`FOR IMMEDIATE RELEASE — eTeacher Group, one of the world's longest-running online-education companies with 25 years of operating live cohorts at global scale, today announced its entry into the longevity market with Longevity Life Academy (LLA), its fifth proprietary online school. LLA is built on a simple conviction: the science of living longer is no longer the hard part — following through on it is. Its answer is a teaching method, refined over a quarter-century, that makes longevity science accessible to anyone willing to show up.
 
-The timing is deliberate. UBS projects the longevity market will reach roughly $8 trillion by 2030, up from $5.3 trillion in 2023, yet most offerings sit at two extremes: costly concierge clinics or unvetted social-media advice. eTeacher enters the underserved middle, with more than 10,000 learners a year and roughly 70% of its customers in the US.
+The move is a considered category bet, not an experiment. UBS projects the longevity market will reach roughly $8 trillion by 2030, up from $5.3 trillion in 2023, yet most offerings sit at two extremes: concierge clinics that cost a fortune, or unvetted social-media advice that no one sticks with. eTeacher enters the underserved middle from a position of strength — more than 10,000 learners a year, 400,000+ courses delivered across nearly 200 countries, and roughly 70% of its customers already in the United States.
 
-LLA's flagship program, "The Longevity Blueprint," is an 18-week live course — 18 sessions across four phases, 50 minutes weekly, in groups of 8–15 — that turns healthy-aging science into one personalized protocol each student can live by. Every student receives an Abbott Lingo continuous glucose monitor, shipped to their US home before Lesson 5, so learning is grounded in their own body data.
+LLA's flagship program, "The Longevity Blueprint," is a guided protocol built around each student's own biology, their own numbers, and the daily practice that turns the next decades into their strongest. It runs as an 18-week live course — 18 sessions across four phases, 50 minutes weekly, in cohorts of 8–15 — where leading experts teach in bite-size lessons, a community keeps students accountable, and each habit is engineered to become permanent. Every student receives an Abbott Lingo continuous glucose monitor, shipped to their US home before Lesson 5, so learning is grounded in their own body data rather than generic rules.
 
-The course is taught by named instructors, including researcher Natalie Blackbourne and UC Santa Barbara senior lecturer Amy Jamieson, on the same platform behind eTeacher's accredited work with a leading research university.
+The course is taught by named instructors, including researcher Natalie Blackbourne and UC Santa Barbara senior lecturer Amy Jamieson, on the same purpose-built platform behind eTeacher's decades of accredited academic coursework — the engagement engine that has helped hundreds of thousands of learners actually finish what they start.
 
 The Longevity Blueprint is enrolling now from $289 per month, and eTeacher says additional longevity courses and a companion practice app are on its roadmap for the year ahead.`,
-    ceoQuote:`For twenty-five years we have taught one thing well: real people learn from real teachers, live, in small groups. We are now pointing that method at the question that matters most — how to add healthy years to a life. Longevity has been sold as a luxury. We intend to make it a habit anyone can keep.`,
+    ceoQuote:`For twenty-five years we have taught one thing well: real people learn from real teachers, live, in a small group that carries them forward. The science of living longer is already here — what has been missing is a way for ordinary people to actually keep it. That is what we teach: small lessons, real habits, a community beside you. Longevity has been sold as a luxury. We are making it a discipline anyone can learn.`,
     note:"NET-NEW CEO statement — flagged for Harel's approval. Written fresh in his voice; deliberately does NOT reuse any of his published TheMarker lines."
   },
   {
     chapter:0, id:"1.2", kicker:"EdTech trade story — the live-learning method applied to longevity",
     targets:"EdSurge / EdTech Magazine / TechCrunch",
-    headline:"eTeacher Brings Its 25-Year Live-Class Teaching Method to Longevity Life Academy",
-    subhead:"The company that taught languages to 400,000+ learners is betting its small-class, live-teaching model can crack the hardest problem in wellness — actually sticking with it.",
-    body:`FOR IMMEDIATE RELEASE — eTeacher Group built its 25-year reputation on one idea: real teachers, live, in small classes, backed by short daily AI practice between sessions. With Longevity Life Academy, the company is applying that methodology to a brand-new subject — living longer.
+    headline:"The EdTech Company That Delivered 400,000+ Live Courses Is Taking On Wellness's Hardest Problem: Follow-Through",
+    subhead:"With Longevity Life Academy, eTeacher Group applies the small-class, live-teaching method it refined over 25 years to the metric the wellness industry keeps failing — completion — backing every student with an instructor, a cohort, and their own biomarker data.",
+    body:`FOR IMMEDIATE RELEASE — eTeacher Group built its 25-year reputation on a method, not a subject: leading experts teaching live in small classes, bite-size lessons delivered daily between sessions, and a cohort that keeps every learner engaged until the habit sticks. With Longevity Life Academy, the company is aiming that method at a subject where it matters more than almost anywhere else — living longer.
 
-It is a pointed answer to an industry problem. Self-guided wellness content is abundant, but completion is not; eTeacher argues that longevity, like language, is a practice that fails without persistence. Its model pairs a weekly live "anchor" session with an expert and short daily practice between classes.
+It is a pointed answer to the industry's real failure. Self-guided wellness content is everywhere, but completion is rare; eTeacher argues that longevity, like language, is a practice that collapses without engagement. Where most programs hand over a PDF and hope, LLA is engineered for follow-through: a weekly live "anchor" session with an expert, short daily practice designed to fit a real schedule, and a small community that makes showing up the default rather than the exception.
 
-In Longevity Life Academy, that means an 18-week live cohort of 8–15 students, 50 minutes weekly across four phases, plus guided daily experiments tied to each student's own glucose, sleep, and movement data. An Abbott Lingo continuous glucose monitor ships to every US student before Lesson 5, turning abstract lessons into personal feedback loops.
+In Longevity Life Academy, that method becomes an 18-week live cohort of 8–15 students, 50 minutes weekly across four phases, with guided daily experiments tied to each student's own glucose, sleep, and movement data. An Abbott Lingo continuous glucose monitor ships to every US student before Lesson 5, turning abstract lessons into personal feedback loops the student can feel.
 
-The academy runs on eTeacher's purpose-built platform and small-cohort structure — the same infrastructure behind its accredited courses with a leading research university — taught by named instructors such as nutrition coach Courtney Donofrio and behavioral specialist Jordan Lattimore.
+The academy runs on eTeacher's purpose-built engagement platform and small-cohort structure — the same infrastructure that has carried hundreds of thousands of learners through to completion — taught by named instructors such as nutrition coach Courtney Donofrio and behavioral specialist Jordan Lattimore.
 
 eTeacher says an AI longevity tutor and a companion practice app are on the roadmap, extending the daily-engagement layer across its five schools.`,
-    ceoQuote:`Information about living longer is everywhere and almost no one follows through. The hard part was never the science — it was staying with it. Our whole model exists to solve that: a live teacher, a small class, and a small step you actually take before the next session.`,
+    ceoQuote:`Information about living longer is everywhere and almost no one follows through. The hard part was never the science — it was staying with it. Everything we build is aimed at that one problem: a live teacher, a small class, a community around you, and a step small enough that you actually take it before the next session. That is how a habit becomes a life.`,
     note:"NET-NEW CEO statement — flagged for Harel's approval. Fresh in his voice; does NOT reuse the published 'gym for the brain' line."
   },
   {
     chapter:0, id:"1.3", kicker:"Business / market-entry — the gap between $2M clinics and free advice",
     targets:"Bloomberg / Business Insider / CNBC",
-    headline:"Longevity Life Academy Targets the Underserved Middle of the $8 Trillion Longevity Market",
-    subhead:"With 70% of its customers already in the US, eTeacher positions Longevity Life Academy between costly clinics and free advice — the underserved middle of an $8 trillion market, starting at $289 a month.",
-    body:`FOR IMMEDIATE RELEASE — eTeacher Group is entering one of consumer health's fastest-growing categories, launching Longevity Life Academy to occupy a gap its CEO argues no one serves well: the space between expensive concierge clinics and free, unverified online advice.
+    headline:"eTeacher Group Bets 25 Years of Global Scale on the $8 Trillion Longevity Market's Missing Middle Class",
+    subhead:"Between $2-million concierge clinics and free, unverified advice sits the mainstream longevity customer no one serves well. eTeacher's edge isn't a lower price — it's a proven teaching engine: bite-size live instruction, leading experts, community, and habit design that has carried 400,000+ learners to completion. Longevity Life Academy brings that engine to healthspan, from $289 a month.",
+    body:`FOR IMMEDIATE RELEASE — eTeacher Group is entering one of consumer health's fastest-growing categories, launching Longevity Life Academy to serve a customer its CEO argues no one serves well: the mainstream household that wants rigorous, science-backed longevity guidance and will actually stay with it. The gap isn't only between $2-million clinics and free advice — it's between information and follow-through.
 
-The opportunity is large and split. UBS values the longevity market at $5.3 trillion in 2023, rising toward $8 trillion by 2030, while the narrower healthspan-product market is estimated at $25 billion-plus today, growing toward roughly $63 billion by 2035, per Market Research Future. Yet affordability and rigor rarely coexist in one offering.
+The opportunity is large and split. UBS values the longevity market at $5.3 trillion in 2023, rising toward $8 trillion by 2030, while the narrower healthspan-product market is estimated at $25 billion-plus today, growing toward roughly $63 billion by 2035, per Market Research Future. Yet rigor, engagement, and accessibility rarely coexist in one offering.
 
-eTeacher enters with advantages rivals would take years to build: roughly 70% of its customers are already in the US, it runs a proven billing and retention engine (payments partner Nuvei), and it has 25 years operating small live cohorts at global scale — 400,000+ courses across nearly 200 countries.
+eTeacher's real advantage is one rivals would take years to build: a teaching method proven to make learning stick. Over 25 years it has delivered 400,000+ courses across nearly 200 countries using live experts in small cohorts, bite-size daily practice, and a community that drives completion — with roughly 70% of its customers already in the US and a proven billing and retention engine (payments partner Nuvei) behind it.
 
-Its flagship Longevity Blueprint starts at $289 per month and includes all 18 live sessions, the learning platform, and an Abbott Lingo continuous glucose monitor shipped to the student's US home — a bundle priced for the mainstream, not the wealthy.
+Its flagship Longevity Blueprint applies that method to healthspan: 18 live sessions, the engagement platform, leading instructors, and an Abbott Lingo continuous glucose monitor shipped to the student's US home, from $289 per month. Accessibility here means more than affordable — it means designed so an ordinary person can actually complete it and keep the results.
 
 eTeacher plans to broaden the catalog with additional longevity courses over the coming year, deepening its position in the mainstream tier of the market.`,
-    ceoQuote:`The longevity market today has two doors: a clinic that costs a fortune, or a feed full of advice no one checked. Most families are locked out of both. We built the door in the middle — the same rigor, taught live, at a price a household can plan around.`,
+    ceoQuote:`People assume the missing piece in longevity is money. It isn't — it is method. The market gives you a clinic you can't afford or a feed you can't trust, and neither teaches you how to actually change. We spent twenty-five years learning how to make people finish what they start. That is what we are bringing to healthy aging.`,
     note:"NET-NEW CEO statement — flagged for Harel's approval. Fresh in his voice; does NOT reuse the published 'Wiz of edtech' line."
   },
   {
     chapter:0, id:"1.4", kicker:"Health / longevity vertical — CGM in every hand, biomarker-driven",
     targets:"Longevity.Technology / Fierce Healthcare / MedCity News",
-    headline:"Longevity Life Academy Puts a Continuous Glucose Monitor in Every Student's Hands",
-    subhead:"eTeacher's new school makes personal biomarker data — not generic advice — the core of an 18-week, six-pillar curriculum.",
-    body:`FOR IMMEDIATE RELEASE — Longevity Life Academy is built on a Medicine 3.0 premise: your protocol should come from your own biology, not a generic checklist. To make that concrete, eTeacher Group is shipping an Abbott Lingo continuous glucose monitor, plus full Lingo app access, to every student — included with the course and arriving before the CGM module in Lesson 5.
+    headline:"Longevity Life Academy Builds Each Student's Protocol Around Their Own Biology — Continuous Glucose Monitor Included",
+    subhead:"eTeacher's new school teaches science-backed longevity from the student's own numbers, not generic advice — a guided, six-pillar protocol built on their biology and delivered through the live, bite-size method that makes it stick.",
+    body:`FOR IMMEDIATE RELEASE — Longevity Life Academy is built on a Medicine 3.0 premise: your protocol should come from your own biology, your own numbers, and a daily practice you can actually keep — not a generic checklist. To make that concrete, eTeacher Group ships an Abbott Lingo continuous glucose monitor, plus full Lingo app access, to every student — included with the course and arriving before the CGM module in Lesson 5.
 
-That biomarker-first design sets the program apart. Where much longevity content offers one-size-fits-all rules, LLA teaches across six pillars — Nutrition, Sleep, Exercise & Movement, Supplements & Wearables, Stress Management, and a personal Longevity Protocol — with students reading their own glucose, HRV, and sleep data as a live feedback loop.
+But the device is only half the design. What sets LLA apart is how the science is taught: leading experts, live, in small cohorts, breaking each pillar into bite-size lessons a student practices between sessions until it becomes a habit. Where much longevity content hands over one-size-fits-all rules and hopes, LLA teaches across six pillars — Nutrition, Sleep, Exercise & Movement, Supplements & Wearables, Stress Management, and a personal Longevity Protocol — with students reading their own glucose, HRV, and sleep data as a live feedback loop, and a community keeping them engaged.
 
 The 18-week structure moves through four phases, from Foundation to a written Blueprint tested against each student's body, in live cohorts of 8–15. Instruction comes from named practitioners including researcher Natalie Blackbourne and UC Santa Barbara senior lecturer and NASM-certified trainer Amy Jamieson.
 
 The Lingo device is a 14-day, painless biosensor, available without a prescription and FSA/HSA-eligible; it is intended for adults 18+, is not for insulin users, and is not a diagnostic tool — grounding the curriculum in real data.
 
 eTeacher says wearable integration will deepen as its longevity courses expand over the coming year, with advanced biomarker content on the roadmap.`,
-    ceoQuote:`Generic advice tells everyone the same thing. Your body doesn't work that way. That is why every student learns from their own data — we ship a glucose monitor to their door and teach them to read what their own biology is telling them, then build one protocol that fits their life.`,
+    ceoQuote:`Generic advice tells everyone the same thing, and your body doesn't work that way. So we teach from your own data — a glucose monitor at your door, experts who explain what your biology is telling you, and small steps you take between classes until they stick. Science-backed longevity should not be a privilege. Taught the right way, it is something anyone can learn.`,
     note:"NET-NEW CEO statement — flagged for Harel's approval. Fresh in his voice; does NOT reuse the published 'cognitive atrophy' line."
   },
   {
-    chapter:0, id:"1.5", kicker:"Company-milestone / \"Wiz of edtech\" ambition",
+    chapter:0, id:"1.5", kicker:"Company-milestone — the live-learning method reaches its fifth school",
     targets:"EdSurge / EdTech Magazine / Business Insider / TechCrunch",
-    headline:"25-Year-Old eTeacher Group Opens Longevity Life Academy, Its Fifth Online School",
-    subhead:"The company behind five global online schools — and an ambition to become the \"Wiz of edtech\" — brings its proven live-learning technology to the world's fastest-growing wellness market.",
-    body:`FOR IMMEDIATE RELEASE — eTeacher Group, a 25-year-old global education company, is extending its "Wiz of edtech" ambition into longevity with the launch of Longevity Life Academy, its fifth online school.
+    headline:"eTeacher Group Opens Its Fifth Online School, Betting a 25-Year Teaching Method Can Crack Longevity",
+    subhead:"The company behind five global online schools brings its proven engine — leading experts, live small-group teaching, bite-size daily learning and community-driven habit change — to the world's fastest-growing wellness market.",
+    body:`FOR IMMEDIATE RELEASE — eTeacher Group, a 25-year-old global education company, today opened Longevity Life Academy, its fifth online school, applying the teaching method it has spent a quarter-century refining to the science of healthy aging.
 
 The move stakes a claim in a category UBS projects will reach $8 trillion by 2030. eTeacher already serves more than 10,000 learners a year across five schools — spanning languages, culture, and now healthspan — with roughly 70% of its customers in the United States.
 
-eTeacher's differentiator is a model refined over decades and exported worldwide: live experts in small groups of 8–15, paired with AI micro-learning, and courses developed in a rigorous academic-partnership tradition. In longevity, that method anchors an 18-week live program with an Abbott Lingo glucose monitor shipped to every US student.
+eTeacher's differentiator is not the subject but the system behind it: leading experts teaching live in small groups of 8–15, bite-size lessons practiced daily between sessions, a community that sustains engagement, and habit design that turns knowledge into routine. It is the engine that has carried 400,000+ courses to completion across nearly 200 countries. In longevity, that method anchors an 18-week live program with an Abbott Lingo glucose monitor shipped to every US student, so each learner's protocol is built on their own biology.
 
-For CEO Harel Tayeb, the company's global reach is a competitive advantage few edtech firms can match: a quarter-century of operating live cohorts at scale, a proven billing and retention engine, and a base of learners in nearly 200 countries.
+For CEO Harel Tayeb, that engine — not scale alone — is the advantage few edtech firms can match: a proven way to make people actually finish, and keep, what they learn.
 
-eTeacher says a companion practice app and additional longevity courses are on the roadmap for the coming year, deepening the school's technology stack.`,
-    ceoQuote:`We have spent twenty-five years proving that people learn best from real teachers, live, in small groups — in nearly two hundred countries. What we care about is whether a person in Ohio or Osaka finishes the course healthier and more capable than they started. Longevity is the most human subject we have ever taught, and it deserves our best work.`,
+eTeacher says a companion practice app and additional longevity courses are on the roadmap for the coming year, deepening the school's engagement layer.`,
+    ceoQuote:`We have spent twenty-five years learning how to make people finish what they start — real teachers, small groups, small steps, a community beside them. That is harder than any single subject, and it is exactly what longevity has been missing. What we care about is whether a person finishes the course healthier and more capable than they started. That is the school we set out to build.`,
     note:"Per CEO directive, this article was reframed from its original national-angle version to a neutral global-EdTech milestone and retargeted to global business/edtech outlets. CEO quote is NET-NEW — flagged for Harel's approval."
   },
   {
     chapter:0, id:"1.6", kicker:"Consumer / human — longevity for every household, accessibility",
     targets:"Well+Good / mindbodygreen / Today / People",
-    headline:"Longevity Life Academy Offers an 18-Week Live Longevity Class With a Glucose Monitor Included",
-    subhead:"Longevity Life Academy wants to make the science of healthy aging as approachable as a weekly class — for 8–15 students at a time, glucose monitor included.",
-    body:`FOR IMMEDIATE RELEASE — Longevity has a reputation for being expensive and intimidating. Longevity Life Academy, the new fifth school from 25-year education company eTeacher Group, is built to be the opposite: a live, 18-week course in groups of 8–15, with an instructor who knows your name and a glucose monitor shipped to your door.
+    headline:"Science-Backed Longevity, Made to Actually Stick: Inside Longevity Life Academy's Live 18-Week Course",
+    subhead:"eTeacher's new school makes healthy aging accessible the way it taught 400,000+ people a language — leading experts, bite-size lessons, a small community that keeps you going, and habits engineered to last, with a glucose monitor included.",
+    body:`FOR IMMEDIATE RELEASE — Longevity has a reputation for being expensive, intimidating, and impossible to stick with. Longevity Life Academy, the new fifth school from 25-year education company eTeacher Group, is built to be the opposite: a guided protocol built around your own biology and your own numbers, taught live in groups of 8–15 by experts who know your name, with a community that makes the habits last.
 
-The pitch lands against a stark backdrop. As the longevity market races toward $8 trillion by 2030 (UBS), its highest-profile figures spend fortunes chasing extra years — leaving most households watching from the sidelines. LLA is designed for those households, with tuition starting from $289 per month.
+Accessibility here is about more than cost. As the longevity market races toward $8 trillion by 2030 (UBS), its highest-profile figures spend fortunes chasing extra years — yet most people who try to follow along quit within weeks. LLA's answer is method, not money: the same bite-size, live, community-driven approach that helped hundreds of thousands of eTeacher learners finish what they started, now aimed at healthy aging. Tuition starts from $289 per month.
 
-Instead of memorizing facts about glucose or sleep, students watch those numbers move in their own bodies. Every US student receives an Abbott Lingo continuous glucose monitor before Lesson 5, then builds a personal protocol across nutrition, movement, sleep, stress, and supplements — a plan meant to be kept for life, not for a 10-week challenge.
+Instead of memorizing facts about glucose or sleep, students watch those numbers move in their own bodies. Every US student receives an Abbott Lingo continuous glucose monitor before Lesson 5, then builds a personal protocol across nutrition, movement, sleep, stress, and supplements — one small habit at a time, a plan meant to be kept for the next decades, not for a 10-week challenge.
 
-The format is eTeacher's proven method, refined over decades of teaching languages to 400,000+ learners across nearly 200 countries and now adapted for healthspan, taught by named instructors such as Courtney Donofrio and Jordan Lattimore.
+The format is eTeacher's proven engine, refined over decades of live teaching to 400,000+ learners across nearly 200 countries and now adapted for healthspan, taught by named instructors such as Courtney Donofrio and Jordan Lattimore, with a cohort that turns showing up into the norm.
 
 A companion practice app is on eTeacher's roadmap, intended to bring the same daily, low-pressure guidance into students' pockets.`,
-    ceoQuote:`A longer, stronger life should not depend on your bank balance. Our promise is simple: show up for a live class each week, take one honest step, and let it compound. That is how ordinary people build extraordinary health — not with a fortune, but with a routine that finally sticks.`,
+    ceoQuote:`A longer, stronger life should be within reach of ordinary people — and reach isn't only about price, it is about whether you can actually keep going. Our promise is simple: leading experts, a small class that knows you, one honest step each week, and a community that will not let you quit. That is how habits finally stick, and how ordinary people build extraordinary health.`,
     note:"NET-NEW CEO statement — flagged for Harel's approval. Fresh in his voice; does NOT reuse published lines."
   },
   // CHAPTER 2 — Julie
