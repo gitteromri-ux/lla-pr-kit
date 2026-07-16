@@ -400,9 +400,8 @@ const SHARED = {
   category:"Health & Wellness  (priority: Health & Wellness → Education → Business)",
   image:"https://www.longevitylifeacademy.com/assets/hero-cgm.jpg",
   imageAlt:"Continuous glucose monitor beside a smartphone displaying personalized health data",
-  contact:`Omri Gitter, Marketing, eTeacher Group
+  contact:`Harel Tayeb, CEO, eTeacher Group
 Email: omri.gitter@eteachergroup.com
-Phone (media / reporters): +972 50 880 5368
-General / US line: +1-888-230-5110
+Phone: +1-888-230-5110
 Website: https://www.longevitylifeacademy.com/`
 };
