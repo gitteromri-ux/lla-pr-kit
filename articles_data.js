@@ -392,7 +392,7 @@ const SHARED = {
   imageAlt:"Continuous glucose monitor beside a smartphone displaying personalized health data",
   contact:`Omri Gitter, Marketing, eTeacher Group
 Email: omri.gitter@eteachergroup.com
-Phone (media / reporters): +972 3 755 4169
+Phone (media / reporters): +972 50 880 5368
 General / US line: +1-888-230-5110
 Website: https://www.longevitylifeacademy.com/`
 };
