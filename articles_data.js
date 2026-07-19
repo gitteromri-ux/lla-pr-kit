@@ -265,7 +265,7 @@ eTeacher says the Longevity Hub is planned for release in the year ahead, with t
 
 It is a bet grounded in the company's own data across six schools: eTeacher argues that engagement, not information, is the real bottleneck in adult learning, and that unlimited self-guided content is precisely what drives people to quit.
 
-The proposed solution is an AI tutor built on eTeacher's micro-learning model — the "gym for the brain" — that will deliver relevant, personalized prompts, recognize streaks, and re-engage users who drift. The company plans for it to draw on each user's glucose, sleep, and movement data so the nudges reflect real biology, not generic reminders.
+The proposed solution is an AI tutor built on eTeacher's adaptive learning model — the "gym for the brain" — that will deliver relevant, personalized prompts, recognize streaks, and re-engage users who drift. The company plans for it to draw on each user's glucose, sleep, and movement data so the nudges reflect real biology, not generic reminders.
 
 This AI layer is on eTeacher's roadmap rather than live today; the current program remains live-expert-led, with the Hub intended to strengthen daily adherence between weekly sessions.
 
