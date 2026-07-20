@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLA — What You Actually Get (Verified Promises)</title>
+<style>
+  :root{--bg:#0d1117;--card:#1a121a;--line:#3d2b38;--tx:#f2e6ef;--mut:#c69bb6;
+        --pink:#db61a2;--pink2:#f778ba;--pinkbg:#25121e;--teal:#39c5cf;--amber:#e3a92c;--red:#f85149;--green:#3fb950;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55;padding:24px;max-width:1120px;margin:0 auto}
+  h1{font-size:26px;margin:0 0 4px;color:var(--pink2)}
+  h2{font-size:19px;margin:30px 0 12px;color:var(--pink2);border-bottom:1px solid var(--line);padding-bottom:6px}
+  .sub{color:var(--mut);margin:0 0 12px;font-size:14px}
+  .nav{margin:0 0 20px}
+  .nav a{display:inline-block;padding:8px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;margin-right:8px;margin-bottom:6px;border:1px solid var(--line);color:var(--tx)}
+  .nav a.active{background:var(--pink);border-color:var(--pink);color:#fff}
+  .legend{background:var(--pinkbg);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0 0 22px;font-size:13.5px;color:var(--mut)}
+  .legend b{color:var(--pink2)}
+  .legend .row{margin:5px 0}
+  .pill{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:2px 9px;border-radius:20px;vertical-align:middle;margin-right:4px}
+  .p-promise{background:rgba(63,185,80,.15);color:#7ee787;border:1px solid rgba(63,185,80,.5)}
+  .p-likely{background:rgba(227,169,44,.15);color:#f0c44f;border:1px solid rgba(227,169,44,.5)}
+  .p-list{background:rgba(248,81,73,.12);color:#ff9c96;border:1px solid rgba(248,81,73,.45)}
+
+  .vend{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:0 0 22px;overflow:hidden}
+  .vend .head{padding:16px 22px;color:#fff;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+  .vend .head .name{font-size:19px;font-weight:800}
+  .vend .head .price{font-size:14px;font-weight:800;background:rgba(0,0,0,.3);padding:5px 13px;border-radius:20px;white-space:nowrap}
+  .h1c{background:linear-gradient(90deg,#7a2d52,#db61a2)}
+  .h2c{background:linear-gradient(90deg,#5f2742,#a94b85)}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  .vend table{margin:0}
+  th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--pink2);font-size:12px;text-transform:uppercase;letter-spacing:.04em;background:rgba(255,255,255,.02)}
+  td .out{font-weight:700;color:#fff}
+  td .q{color:var(--mut);font-style:italic;font-size:12.5px}
+  .specs{padding:12px 22px;border-top:1px solid var(--line);font-size:13px;color:var(--mut);background:rgba(255,255,255,.015)}
+  .specs b{color:var(--tx)}
+  .specs .g{color:#7ee787;font-weight:700}
+
+  .script{background:rgba(63,185,80,.08);border:1px solid rgba(63,185,80,.4);border-left:4px solid var(--green);border-radius:10px;padding:16px 20px;margin:8px 0 22px}
+  .script .lab{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:#7ee787;margin-bottom:8px}
+  .script .say{font-size:15px;color:#e8f5ea;line-height:1.6}
+  .script .dont{font-size:13.5px;color:#ff9c96;margin-top:10px}
+  .script .dont b{color:#ffb3ae}
+
+  .bundle{background:var(--pinkbg);border:1px solid var(--pink);border-radius:12px;padding:16px 20px;margin:0 0 22px}
+  .bundle .t{font-size:16px;font-weight:800;color:var(--pink2);margin-bottom:6px}
+  .bundle .n{font-size:20px;font-weight:800;color:#fff}
+
+  .src{font-size:12.5px;color:var(--mut);margin-top:24px;border-top:1px solid var(--line);padding-top:14px}
+  .src a{color:var(--teal);text-decoration:none}
+  a.btn{display:inline-block;margin:6px 8px 0 0;padding:8px 15px;border-radius:8px;background:var(--pink);color:#fff;text-decoration:none;font-weight:700;font-size:13px}
+  a.btn.alt{background:transparent;border:1px solid var(--line);color:var(--tx)}
+</style>
+</head>
+<body>
+  <h1>What You Actually Get — Verified Promises</h1>
+  <p class="sub">Longevity Life Academy · Julie Gibson Clark story · Verified 20 July 2026 · Every line quoted from the vendor's own page · Online coverage only</p>
+  <div class="nav">
+    <a href="index.html">Submission Kit (free outlets)</a>
+    <a href="newswire.html">Paid Newswire Options</a>
+    <a href="promises.html" class="active">What You Actually Get</a>
+    <a href="articles.html">All Articles (copy-paste)</a>
+  </div>
+
+  <div class="legend">
+    <b>Read this before you promise anything to the CEO or board.</b> Every vendor name-drops AP, Bloomberg, NBC and FOX. But there are three very different things behind those logos — and only one is a real promise:
+    <div class="row"><span class="pill p-promise">Promise</span> Contractually guaranteed, permanent live page on that exact site, with a link you can send. Refund if it fails. <b>Say it out loud.</b></div>
+    <div class="row"><span class="pill p-likely">Likely</span> Reached via the vendor's guaranteed feed (Benzinga / EIN network). Appears most of the time, but is <b>not</b> individually guaranteed and links may rotate off. <b>Say "expected," not "guaranteed."</b></div>
+    <div class="row"><span class="pill p-list">List name</span> The logo only appears in the vendor's marketing "reach." It is a wire feed / affiliate reprint, not a guaranteed flagship article. <b>Do NOT promise this.</b></div>
+  </div>
+
+  <!-- ===================== EIN ===================== -->
+  <div class="vend">
+    <div class="head h1c">
+      <div class="name">EIN Presswire — $149 Basic (1 release)</div>
+      <span class="price">$149 · same day</span>
+    </div>
+    <table>
+      <tr><th style="width:30%">Outlet / network</th><th style="width:16%">What you get</th><th>Exact wording on EIN's own page</th></tr>
+      <tr><td class="out">EIN Presswire network page</td><td><span class="pill p-promise">Promise</span></td><td class="q">"Because of our role as a publisher, you'll get published. Guaranteed." — permanent release page, live 365 days.</td></tr>
+      <tr><td class="out">AP News (apnews.com)</td><td><span class="pill p-promise">Promise</span></td><td class="q">"Placement on AP News (Associated Press) with a Potential Reach of 35 Million Unique Monthly Visitors" — listed as an included line item on all packages.</td></tr>
+      <tr><td class="out">USA TODAY Network</td><td><span class="pill p-likely">Likely</span></td><td class="q">"Distributed to the USA TODAY Network … based on relevance only." <b>"based on relevance"</b> = not every release lands.</td></tr>
+      <tr><td class="out">Google News</td><td><span class="pill p-promise">Promise</span></td><td class="q">"Placement on Leading News Aggregators … (Google News, Bloomberg Terminals, MuckRack …)" — indexed to Google News.</td></tr>
+      <tr><td class="out">Bloomberg Terminals</td><td><span class="pill p-likely">Likely</span></td><td class="q">"Bloomberg Terminals" — appears inside the paid Bloomberg <b>terminal feed</b>, NOT a public bloomberg.com article. Not a link you can send.</td></tr>
+      <tr><td class="out">Local NBC / CBS / FOX / ABC affiliate station sites</td><td><span class="pill p-likely">Likely</span></td><td class="q">"Distributed to U.S. TV/Radio Based on Relevance." These are <b>local affiliate station</b> pages (e.g. WNBC, WCCO, WFOR, KUSA), NOT NBC.com / CBS.com national.</td></tr>
+      <tr><td class="out">3,900+ affinity-group publications</td><td><span class="pill p-list">List name</span></td><td class="q">"Exclusive Placement on 3,900+ Affinity Group Publications Based on Relevance" — reprint pool, not flagship newsrooms.</td></tr>
+    </table>
+    <div class="specs"><b>Included:</b> 700 words · 1 image · 1 video · 3 anchor-text links · same-day distribution (verified accounts, business hours) · detailed distribution report. <span class="g">Hard guarantee = published on EIN network + AP News placement + Google News.</span>
+    <br><a class="btn" href="https://www.einpresswire.com/account/create/presswire-basic" target="_blank">Order $149 Basic →</a><a class="btn alt" href="https://www.einpresswire.com/login" target="_blank">Sign in</a></div>
+  </div>
+
+  <!-- ===================== PRNOW ===================== -->
+  <div class="vend">
+    <div class="head h2c">
+      <div class="name">PRNow (Benzinga à-la-carte)</div>
+      <span class="price">from $49 · 0–48h</span>
+    </div>
+    <table>
+      <tr><th style="width:30%">Outlet</th><th style="width:16%">Price / status</th><th>Exact wording on PRNow's own page</th></tr>
+      <tr><td class="out">Benzinga (benzinga.com)</td><td>core · <span class="pill p-promise">Promise</span></td><td class="q">"For approved topics, publication is guaranteed … If your content cannot be published, you receive a full refund." + "We formally guarantee your Benzinga link for 12 months." Permanent, sendable link.</td></tr>
+      <tr><td class="out">Yahoo Finance</td><td>$99 · <span class="pill p-likely">Likely</span></td><td class="q">Sold as an add-on; Benzinga content syndicates to Yahoo Finance. PRNow's contractual guarantee is Benzinga — Yahoo is expected, not individually guaranteed.</td></tr>
+      <tr><td class="out">Business Insider (Markets)</td><td>$149 · <span class="pill p-likely">Likely</span></td><td class="q">Add-on via the same Benzinga syndication path. Markets/partner section, not a hand-written BI newsroom story.</td></tr>
+      <tr><td class="out">MarketWatch</td><td>$99 · <span class="pill p-likely">Likely</span></td><td class="q">Add-on via syndication. Expected placement, not individually guaranteed.</td></tr>
+      <tr><td class="out">AP News</td><td>$58 · <span class="pill p-likely">Likely</span></td><td class="q">Standalone add-on (also covered by EIN's guaranteed AP placement — don't pay twice).</td></tr>
+      <tr><td class="out">USA Today</td><td>$49 · <span class="pill p-likely">Likely</span></td><td class="q">Standalone add-on (also in EIN's USA TODAY Network path).</td></tr>
+      <tr><td class="out">Digital Journal / Globe and Mail / Barchart</td><td>$15 / $19 / $29</td><td class="q">Individual à-la-carte listings; low-cost fillers, minor prestige.</td></tr>
+    </table>
+    <div class="specs"><b>Included on Benzinga:</b> images, logos, outbound links at no extra cost · 0–48 business-hour turnaround · 12-month link guarantee. <span class="g">Hard guarantee = a permanent Benzinga article. Everything else is syndication (expected, not promised).</span>
+    <br><a class="btn" href="https://prnow.io/benzinga-press-release" target="_blank">Order at PRNow →</a></div>
+  </div>
+
+  <!-- ===================== BOARD SCRIPT ===================== -->
+  <h2>Your board-safe promise script</h2>
+  <div class="bundle">
+    <div class="t">Recommended bundle</div>
+    <div class="n">EIN $149 + PRNow Benzinga/Yahoo $99 + PRNow Business Insider $149 = $397</div>
+  </div>
+  <div class="script">
+    <div class="lab">✅ Say this — 100% defensible</div>
+    <div class="say">"Within 48 hours we are <b>guaranteed live on AP News, Benzinga, and Google News</b> — permanent links we can send. That coverage <b>syndicates to Yahoo Finance, Business Insider and MarketWatch</b>, and feeds the <b>USA TODAY Network and local NBC / CBS / FOX affiliate stations</b>."</div>
+    <div class="dont"><b>❌ Do NOT say:</b> "guaranteed on NBC News, Bloomberg.com, or Forbes." Those are wire-feed / terminal names, not article pages you can prove with a link. Bloomberg here means the paid <b>terminal</b>, not bloomberg.com.</div>
+  </div>
+
+  <!-- ===================== PITCH ONLY ===================== -->
+  <h2>Prestige & longevity names — pitch only (no vendor can promise these)</h2>
+  <div class="vend">
+    <table>
+      <tr><th style="width:26%">Outlet</th><th style="width:22%">Type</th><th>Real submission point</th></tr>
+      <tr><td class="out">Longevity.Technology</td><td>Longevity trade</td><td class="q">longevity.technology/submit-an-article/ · phil@longevity.technology</td></tr>
+      <tr><td class="out">Lifespan.io</td><td>Longevity news</td><td class="q">lifespan.io/about-press/</td></tr>
+      <tr><td class="out">Well+Good</td><td>Wellness</td><td class="q">abbey.stone@wellandgood.com (Exec Editor)</td></tr>
+      <tr><td class="out">Yahoo Life</td><td>Health/lifestyle</td><td class="q">erin.donnelly@yahooinc.com · Yahoo News op-ed guide</td></tr>
+      <tr><td class="out">HuffPost</td><td>Digital-only news</td><td class="q">wellness@huffpost.com · pitch@huffpost.com</td></tr>
+      <tr><td class="out">Forbes / Fortune / Newsweek / TechCrunch</td><td>Prestige news</td><td class="q">Reporter pitch only. Anyone selling "guaranteed Forbes" is a scam or paid BrandVoice ($thousands).</td></tr>
+    </table>
+  </div>
+
+  <div class="src">
+    <b>Sources (all verified 20 July 2026, quoted from the vendor's own live pages):</b><br>
+    EIN Presswire pricing &amp; included distribution: <a href="https://www.einpresswire.com/pricing" target="_blank">einpresswire.com/pricing</a> · distribution detail: <a href="https://www.einpresswire.com/distribution-details/" target="_blank">distribution-details</a><br>
+    PRNow à-la-carte pricing &amp; Benzinga guarantee: <a href="https://prnow.io/benzinga-press-release" target="_blank">prnow.io/benzinga-press-release</a><br>
+    <b>Online coverage only.</b> Guarantee validity assumes weekday business-hours submission. "Based on relevance" wording means placement is editorially filtered, not universal.
+  </div>
+</body>
+</html>
