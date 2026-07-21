@@ -8,31 +8,31 @@
   :root{--bg:#0d1117;--card:#1a121a;--line:#3d2b38;--tx:#f2e6ef;--mut:#c69bb6;
         --pink:#db61a2;--pink2:#f778ba;--pinkbg:#25121e;--teal:#39c5cf;--green:#3fb950;--gold:#f0c44f;}
   *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;padding:24px;max-width:1120px;margin:0 auto}
-  h1{font-size:27px;margin:0 0 4px;color:var(--pink2)}
-  h2{font-size:20px;margin:34px 0 10px;color:var(--pink2);border-bottom:1px solid var(--line);padding-bottom:6px}
-  .sub{color:var(--mut);margin:0 0 14px;font-size:14px}
-  .nav{margin:0 0 22px}
-  .nav a{display:inline-block;padding:8px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;margin-right:8px;margin-bottom:6px;border:1px solid var(--line);color:var(--tx)}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55;padding:24px;max-width:1180px;margin:0 auto}
+  h1{font-size:26px;margin:0 0 4px;color:var(--pink2)}
+  h2{font-size:19px;margin:30px 0 10px;color:var(--pink2);border-bottom:1px solid var(--line);padding-bottom:6px}
+  .sub{color:var(--mut);margin:0 0 14px;font-size:13.5px}
+  .nav{margin:0 0 20px}
+  .nav a{display:inline-block;padding:8px 15px;border-radius:8px;text-decoration:none;font-weight:600;font-size:13.5px;margin-right:8px;margin-bottom:6px;border:1px solid var(--line);color:var(--tx)}
   .nav a.active{background:var(--pink);border-color:var(--pink);color:#fff}
-  .big{background:var(--pinkbg);border:1px solid var(--green);border-radius:14px;padding:18px 22px;margin:0 0 24px;font-size:15px}
+  .big{background:var(--pinkbg);border:1px solid var(--green);border-radius:14px;padding:16px 20px;margin:0 0 22px;font-size:14.5px}
   .big b{color:#7ee787}
-  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:0 0 10px}
-  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{color:var(--pink2);font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;background:rgba(255,255,255,.03)}
-  td .out{font-weight:800;color:#fff;font-size:15px}
-  .price{font-weight:800;color:#7ee787;font-size:15px;white-space:nowrap}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin:0 0 10px}
+  th,td{text-align:left;padding:10px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--pink2);font-size:11px;text-transform:uppercase;letter-spacing:.03em;background:rgba(255,255,255,.03)}
+  td .out{font-weight:800;color:#fff;font-size:14.5px}
+  .price{font-weight:800;color:#7ee787;font-size:14.5px;white-space:nowrap}
   .time{color:var(--gold);font-weight:700;white-space:nowrap}
-  .self{color:#7ee787;font-weight:700}
-  tr.totrow td{background:var(--pinkbg);border-top:2px solid var(--pink);font-size:15px}
-  tr.totrow .price{font-size:18px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 16px 14px;margin:0 0 22px;overflow-x:auto}
+  .vend{font-weight:700;color:var(--teal)}
+  .self{color:#7ee787;font-weight:700;white-space:nowrap}
+  tr.totrow td{background:var(--pinkbg);border-top:2px solid var(--pink);font-size:14.5px}
+  tr.totrow .price{font-size:17px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 14px 12px;margin:0 0 20px;overflow-x:auto}
   a.ex{color:var(--teal);text-decoration:none;font-weight:600;word-break:break-word}
-  a.buy{display:inline-block;margin:4px 8px 0 0;padding:10px 18px;border-radius:9px;background:var(--pink);color:#fff;text-decoration:none;font-weight:800;font-size:14px}
-  .note{font-size:12.5px;color:var(--mut)}
-  .src{font-size:12px;color:var(--mut);margin-top:26px;border-top:1px solid var(--line);padding-top:14px}
+  a.buy{display:inline-block;margin:4px 8px 0 0;padding:9px 16px;border-radius:9px;background:var(--pink);color:#fff;text-decoration:none;font-weight:800;font-size:13.5px}
+  .note{font-size:12px;color:var(--mut)}
+  .src{font-size:11.5px;color:var(--mut);margin-top:24px;border-top:1px solid var(--line);padding-top:14px}
   .src a{color:var(--teal);text-decoration:none}
-  .chk{color:#7ee787;font-weight:800}
 </style>
 </head>
 <body>
@@ -46,130 +46,164 @@
   </div>
 
   <div class="big">
-    <b>Your exact list. Round 2 clean slate. Forbes removed. I self-submit every one.</b><br>
-    Each outlet is ordered individually with a <b>published-or-full-refund guarantee</b>, a <b>permanent link</b>, and a <b>firm timeline</b>. I fill in every field myself and stop at the payment screen for your card — you never touch a form.
+    <b>Your exact list, with the vendor named for every line. Round 2 clean slate, Forbes removed.</b><br>
+    Outlets are ordered à-la-carte, so you can <b>alternate your 4 articles</b> across them — a different story per order. No single vendor forces one release everywhere. Each order is <b>published-or-full-refund</b>, gives a <b>permanent link</b>, and I <b>self-submit</b> every field and stop at payment for your card.
   </div>
 
-  <!-- ============ THE COMMITMENTS CHART ============ -->
-  <h2>The chart — outlet · price · timeline · guarantee · proof</h2>
+  <h2>The chart — outlet · vendor · price · timeline · guarantee</h2>
   <div class="card">
     <table>
       <tr>
-        <th style="width:15%">Outlet</th>
-        <th style="width:9%">Price</th>
-        <th style="width:11%">Live within</th>
-        <th style="width:19%">Guarantee</th>
-        <th style="width:11%">I submit?</th>
-        <th>The link you get + where I buy</th>
+        <th style="width:14%">Outlet</th>
+        <th style="width:12%">Vendor</th>
+        <th style="width:8%">Price</th>
+        <th style="width:9%">Live within</th>
+        <th style="width:15%">Guarantee</th>
+        <th style="width:10%">I submit?</th>
+        <th>Link you get</th>
       </tr>
 
       <tr>
         <td class="out">AP News</td>
+        <td class="vend"><a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow</a></td>
         <td class="price">$58</td>
         <td class="time">24–48h</td>
         <td>Published or 100% refund</td>
         <td class="self">✓ Self-submit</td>
-        <td>Permanent <code>apnews.com/press-release/…</code> · <a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow</a></td>
+        <td><code>apnews.com/press-release/…</code></td>
       </tr>
 
       <tr>
-        <td class="out">Yahoo<br><span class="note">(yahoo.com via syndication)</span></td>
+        <td class="out">Yahoo Finance</td>
+        <td class="vend"><a class="ex" href="https://prnow.io/yahoo-finance-press-release" target="_blank">PRNow</a></td>
         <td class="price">$99</td>
         <td class="time">24–48h</td>
         <td>Published or 100% refund</td>
         <td class="self">✓ Self-submit</td>
-        <td>Permanent <code>finance.yahoo.com/news/…</code> article on yahoo.com · <a class="ex" href="https://prnow.io/yahoo-finance-press-release" target="_blank">PRNow</a></td>
+        <td><code>finance.yahoo.com/news/…</code></td>
+      </tr>
+
+      <tr>
+        <td class="out">Yahoo <span class="note">(general / Yahoo News)</span></td>
+        <td class="vend"><a class="ex" href="https://www.linkingnews.com/pricing/" target="_blank">Linking News — Silver</a></td>
+        <td class="price">$669</td>
+        <td class="time">2–5 days</td>
+        <td>Guaranteed placement</td>
+        <td class="self">✓ Self-submit</td>
+        <td>Yahoo News + Yahoo Finance + intl Yahoo + AP + 500 sites</td>
       </tr>
 
       <tr>
         <td class="out">Business Insider</td>
+        <td class="vend"><a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow</a></td>
         <td class="price">$149</td>
         <td class="time">24–48h</td>
         <td>Published or 100% refund</td>
         <td class="self">✓ Self-submit</td>
-        <td>Permanent <code>markets.businessinsider.com/news/…</code> · <a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow</a></td>
+        <td><code>markets.businessinsider.com/news/…</code></td>
       </tr>
 
       <tr>
         <td class="out">USA Today</td>
+        <td class="vend"><a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow</a></td>
         <td class="price">$49</td>
         <td class="time">24–48h</td>
         <td>Published or 100% refund</td>
         <td class="self">✓ Self-submit</td>
-        <td>Permanent <code>usatoday.com/press-release/story/…</code> · <a class="ex" href="https://www.usatoday.com/press-release/story/37716/" target="_blank">example</a> · <a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow</a></td>
+        <td><code>usatoday.com/press-release/story/…</code></td>
       </tr>
 
       <tr>
         <td class="out">MarketWatch</td>
+        <td class="vend"><a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow</a></td>
         <td class="price">$99</td>
         <td class="time">24–48h</td>
         <td>Published or 100% refund</td>
         <td class="self">✓ Self-submit</td>
-        <td>Permanent <code>marketwatch.com/press-release/…</code> · <a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow</a></td>
+        <td><code>marketwatch.com/press-release/…</code></td>
       </tr>
 
       <tr>
         <td class="out">MSN</td>
+        <td class="vend"><a class="ex" href="https://reachwire.co.uk/publish-press-release-on-msn" target="_blank">ReachWire</a></td>
         <td class="price">$80</td>
         <td class="time">5–7 days</td>
         <td>Guaranteed publish or 100% refund</td>
         <td class="self">✓ Self-submit</td>
-        <td>Permanent <code>msn.com</code> article (DA 97), Google-indexed · <a class="ex" href="https://reachwire.co.uk/publish-press-release-on-msn" target="_blank">ReachWire</a></td>
+        <td><code>msn.com</code> article (DA 97), Google-indexed</td>
       </tr>
 
       <tr>
         <td class="out">Bing News</td>
+        <td class="vend">— (auto)</td>
         <td class="price">included</td>
         <td class="time">24–48h</td>
         <td>Auto-indexed from buys above</td>
         <td class="self">✓ Automatic</td>
-        <td>Indexed on <code>bing.com/news</code> — no separate order</td>
+        <td><code>bing.com/news</code></td>
       </tr>
 
       <tr>
         <td class="out">Google News</td>
+        <td class="vend">— (auto)</td>
         <td class="price">included</td>
         <td class="time">24–48h</td>
         <td>Auto-indexed from buys above</td>
         <td class="self">✓ Automatic</td>
-        <td>Indexed on <code>news.google.com</code> — no separate order</td>
+        <td><code>news.google.com</code></td>
       </tr>
 
       <tr>
         <td class="out">Wire distribution</td>
+        <td class="vend">— (auto)</td>
         <td class="price">included</td>
         <td class="time">24–48h</td>
         <td>Guaranteed distribution</td>
         <td class="self">✓ Automatic</td>
-        <td>Syndicated network feed carried with the paid placements</td>
+        <td>Syndicated network feed</td>
       </tr>
 
       <tr class="totrow">
-        <td class="out">TOTAL — full list</td>
+        <td class="out">TOTAL — with Yahoo Finance only</td>
+        <td class="vend">PRNow + ReachWire</td>
         <td class="price">$534</td>
         <td class="time">≤ 7 days</td>
         <td>Every item refundable</td>
-        <td class="self">✓ All self-submitted</td>
-        <td>AP + Yahoo + Business Insider + USA Today + MarketWatch + MSN (+ Bing, Google, wire free)</td>
+        <td class="self">✓ All self-submit</td>
+        <td>AP + Yahoo Finance + BI + USA Today + MarketWatch + MSN</td>
+      </tr>
+
+      <tr class="totrow">
+        <td class="out">TOTAL — add general Yahoo (Linking News)</td>
+        <td class="vend">PRNow + ReachWire + Linking News</td>
+        <td class="price">$1,203</td>
+        <td class="time">≤ 7 days</td>
+        <td>Every item refundable / guaranteed</td>
+        <td class="self">✓ All self-submit</td>
+        <td>Everything above + Yahoo News (news.yahoo.com)</td>
       </tr>
     </table>
   </div>
 
   <div class="big">
-    <b>Grand total: $534</b> — all six paid outlets, every one guaranteed refundable, all live within 7 days, all self-submitted by me. Bing, Google News and wire distribution ride along free.
+    <b>Two totals, your choice:</b>
+    <b>$534</b> = your full list with the Yahoo Finance URL (the direct à-la-carte one).
+    <b>$1,203</b> = same list PLUS a real general Yahoo News (news.yahoo.com) placement, which only comes bundled in Linking News' Silver plan.
+    Vendors are split across PRNow, ReachWire and Linking News so you can rotate all 4 articles instead of one release everywhere.
     <div style="margin-top:10px">
-      <a class="buy" href="https://prnow.io/benzinga-press-release" target="_blank">Buy AP · BI · USA Today · MarketWatch · Yahoo at PRNow →</a>
-      <a class="buy" href="https://reachwire.co.uk/publish-press-release-on-msn" target="_blank">Buy MSN at ReachWire →</a>
+      <a class="buy" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow (AP · BI · USA Today · MarketWatch · Yahoo Finance) →</a>
+      <a class="buy" href="https://reachwire.co.uk/publish-press-release-on-msn" target="_blank">ReachWire (MSN) →</a>
+      <a class="buy" href="https://www.linkingnews.com/pricing/" target="_blank">Linking News (general Yahoo News) →</a>
     </div>
   </div>
 
   <div class="src">
     <b>Sources (verified 21 July 2026):</b>
-    <a href="https://prnow.io/benzinga-press-release" target="_blank">PRNow à-la-carte (AP/BI/USA Today/MarketWatch)</a> ·
-    <a href="https://prnow.io/yahoo-finance-press-release" target="_blank">PRNow Yahoo ($99, published-or-refund, permanent)</a> ·
-    <a href="https://reachwire.co.uk/publish-press-release-on-msn" target="_blank">ReachWire MSN (guaranteed, DA97, refund)</a> ·
-    <a href="https://www.instantpress.co/blog/how-to-get-featured-in-yahoo-news" target="_blank">Yahoo News vs Yahoo Finance syndication</a>.<br>
-    <b>Honest notes:</b> (1) The buyable, guaranteed Yahoo URL is on <code>yahoo.com</code> via wire syndication — news.yahoo.com editorial slots cannot be purchased by anyone, so no honest vendor guarantees that specific subdomain. (2) Every placement is a permanent, paid press-release/editorial article on the outlet's own domain, refundable if it fails to publish. (3) MSN takes 5–7 days; all others 24–48h. Forbes removed per your instruction.
+    <a href="https://prnow.io/benzinga-press-release" target="_blank">PRNow à-la-carte</a> ·
+    <a href="https://prnow.io/yahoo-finance-press-release" target="_blank">PRNow Yahoo Finance ($99)</a> ·
+    <a href="https://reachwire.co.uk/publish-press-release-on-msn" target="_blank">ReachWire MSN ($80)</a> ·
+    <a href="https://www.linkingnews.com/pricing/" target="_blank">Linking News Silver ($669, incl. Yahoo News)</a>.<br>
+    <b>Honest notes:</b> (1) Yahoo Finance ($99) is the direct à-la-carte URL on finance.yahoo.com. General Yahoo News (news.yahoo.com) cannot be bought à-la-carte anywhere — the only real route is Linking News' Silver bundle, which is why it costs more. (2) Each PRNow order takes its own article, so you can alternate all 4 stories across outlets. (3) MSN 5–7 days; PRNow outlets 24–48h; Linking News 2–5 days. Forbes removed per your instruction.
   </div>
 </body>
 </html>
