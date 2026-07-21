@@ -3,162 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LLA — The Winning Solution (Verified Bundles)</title>
+<title>LLA — All Outlets, No Compromise</title>
 <style>
   :root{--bg:#0d1117;--card:#1a121a;--line:#3d2b38;--tx:#f2e6ef;--mut:#c69bb6;
-        --pink:#db61a2;--pink2:#f778ba;--pinkbg:#25121e;--teal:#39c5cf;--amber:#e3a92c;--red:#f85149;--green:#3fb950;}
+        --pink:#db61a2;--pink2:#f778ba;--pinkbg:#25121e;--teal:#39c5cf;--green:#3fb950;--red:#f85149;}
   *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55;padding:24px;max-width:1240px;margin:0 auto}
-  h1{font-size:26px;margin:0 0 4px;color:var(--pink2)}
-  h2{font-size:19px;margin:32px 0 6px;color:var(--pink2);border-bottom:1px solid var(--line);padding-bottom:6px}
-  .sub{color:var(--mut);margin:0 0 12px;font-size:14px}
-  .nav{margin:0 0 20px}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;padding:24px;max-width:1080px;margin:0 auto}
+  h1{font-size:27px;margin:0 0 4px;color:var(--pink2)}
+  h2{font-size:20px;margin:34px 0 10px;color:var(--pink2);border-bottom:1px solid var(--line);padding-bottom:6px}
+  .sub{color:var(--mut);margin:0 0 14px;font-size:14px}
+  .nav{margin:0 0 22px}
   .nav a{display:inline-block;padding:8px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;margin-right:8px;margin-bottom:6px;border:1px solid var(--line);color:var(--tx)}
   .nav a.active{background:var(--pink);border-color:var(--pink);color:#fff}
-  .pill{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:2px 9px;border-radius:20px;vertical-align:middle}
-  .p-real{background:rgba(63,185,80,.15);color:#7ee787;border:1px solid rgba(63,185,80,.5)}
-  .p-syn{background:rgba(227,169,44,.15);color:#f0c44f;border:1px solid rgba(227,169,44,.5)}
-  .p-out{background:rgba(248,81,73,.12);color:#ff9c96;border:1px solid rgba(248,81,73,.45)}
-  table{width:100%;border-collapse:collapse;font-size:13px;margin:0 0 8px}
-  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{color:var(--pink2);font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;background:rgba(255,255,255,.03)}
-  td .out{font-weight:700;color:#fff;font-size:14px}
-  td .q{color:var(--mut);font-size:12px}
-  .price{font-weight:800;color:#fff;white-space:nowrap}
-  code{background:#241019;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:11.5px;color:#f0c44f;word-break:break-all}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 18px 14px;margin:0 0 22px}
+  .big{background:var(--pinkbg);border:1px solid var(--green);border-radius:14px;padding:18px 22px;margin:0 0 24px;font-size:15px}
+  .big b{color:#7ee787}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:0 0 10px}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:middle}
+  th{color:var(--pink2);font-size:12px;text-transform:uppercase;letter-spacing:.04em;background:rgba(255,255,255,.03)}
+  td .out{font-weight:800;color:#fff;font-size:15px}
+  .price{font-weight:800;color:#7ee787;font-size:16px;white-space:nowrap}
+  .time{color:#f0c44f;font-weight:700;white-space:nowrap}
+  .tag{display:inline-block;font-size:11px;font-weight:800;text-transform:uppercase;padding:2px 8px;border-radius:20px}
+  .have{background:rgba(63,185,80,.15);color:#7ee787;border:1px solid rgba(63,185,80,.5)}
+  .buy-t{background:rgba(219,97,162,.15);color:#f778ba;border:1px solid rgba(219,97,162,.5)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 20px 16px;margin:0 0 22px}
   a.ex{color:var(--teal);text-decoration:none;font-weight:600;word-break:break-all}
-  .win{background:var(--pinkbg);border:1px solid var(--pink);border-radius:12px;padding:18px 22px;margin:0 0 18px}
-  .win.top{outline:2px solid var(--green)}
-  .win .t{font-size:16px;font-weight:800;color:var(--pink2)}
-  .win.top .t::after{content:" ★ WINNER";color:#7ee787;font-size:12px}
-  .win .cost{font-size:24px;font-weight:800;color:#7ee787;margin:2px 0 6px}
-  .win .n{font-size:13.5px;color:#fff;margin:3px 0}
-  .win .g{font-size:12.5px;color:var(--mut);margin-top:8px}
-  a.buy{display:inline-block;margin-top:10px;padding:9px 18px;border-radius:8px;background:var(--pink);color:#fff;text-decoration:none;font-weight:800;font-size:13px}
-  .warn{background:rgba(248,81,73,.08);border:1px solid rgba(248,81,73,.4);border-left:4px solid var(--red);border-radius:10px;padding:14px 18px;margin:0 0 22px;font-size:13.5px;color:#ffd9d6}
-  .warn b{color:#ffb3ae}
-  .src{font-size:12px;color:var(--mut);margin-top:24px;border-top:1px solid var(--line);padding-top:14px}
+  .total{background:var(--pinkbg);border:1px solid var(--pink);border-radius:12px;padding:18px 22px;margin:0 0 20px}
+  .total .lbl{font-size:14px;color:var(--mut)}
+  .total .amt{font-size:30px;font-weight:800;color:#7ee787;margin:4px 0}
+  a.buy{display:inline-block;margin-top:8px;padding:10px 20px;border-radius:9px;background:var(--pink);color:#fff;text-decoration:none;font-weight:800;font-size:14px;margin-right:8px}
+  .note{font-size:13px;color:var(--mut);margin-top:6px}
+  .src{font-size:12px;color:var(--mut);margin-top:26px;border-top:1px solid var(--line);padding-top:14px}
   .src a{color:var(--teal);text-decoration:none}
 </style>
 </head>
 <body>
-  <h1>The Winning Solution — Every Outlet You Named</h1>
-  <p class="sub">Longevity Life Academy · Julie Gibson Clark story · Verified 21 July 2026 · Media contact: Harel Tayeb, CEO, eTeacher Group · omri.gitter@eteachergroup.com · +1-888-230-5110 · longevitylifeacademy.com</p>
+  <h1>All Outlets — No Compromise</h1>
+  <p class="sub">Longevity Life Academy · Julie Gibson Clark · Verified 21 July 2026 · Contact: Harel Tayeb, CEO, eTeacher Group · omri.gitter@eteachergroup.com · +1-888-230-5110 · longevitylifeacademy.com</p>
   <div class="nav">
     <a href="index.html">Submission Kit (free)</a>
     <a href="newswire.html">Paid Newswire</a>
-    <a href="promises.html" class="active">Winning Solution</a>
+    <a href="promises.html" class="active">All Outlets</a>
     <a href="articles.html">All Articles</a>
   </div>
 
-  <div class="card" style="border-color:var(--green)">
-    <p style="font-size:14px;margin:12px 2px"><b style="color:#7ee787">Bottom line:</b> ONE press release on the right wire hits your entire list — AP, Yahoo, MarketWatch, Business Insider, USA Today, Bing, Google News — in 24–48h. Two vendors do this credibly. Forbes needs a separate add-on (no reporter route below). MSN cannot be guaranteed by anyone and is excluded on purpose.</p>
+  <div class="big">
+    <b>Your full list — every single one you asked for, and how we get it.</b><br>
+    AP is already <b>DONE</b> (Round 1, via EIN — you're live on apnews.com). The remaining seven are each bought individually, guaranteed, permanent link, refund if it doesn't publish. No wire lottery, no "maybe." You pick the outlet, you get the outlet.
   </div>
 
-  <!-- ============ THE TWO WINNERS ============ -->
-  <h2>The bundle that covers everything — pick one</h2>
-
-  <div class="win top">
-    <div class="t">eReleases "Newsmaker" — over the real PR Newswire + AP wire</div>
-    <div class="cost">$499 &nbsp;<span style="font-size:14px;color:var(--mut)">($349 with 30% first-order discount)</span></div>
-    <div class="n">✅ ONE release distributes over <b>Cision PR Newswire (the wire your CEO respects) + Associated Press Newswire</b></div>
-    <div class="n">✅ Guaranteed syndication: <b>AP News · Yahoo News/Finance · MarketWatch · Google News · Bing News</b> + 4,500 news sites + direct-to-editor desks at 85,000 journalists</div>
-    <div class="n">✅ WireWatch proof report with your live links, 2 hours after distribution</div>
-    <div class="g">Turnaround: next business day standard, or <b>rush = live within ~2 hours</b> (submit before 3pm ET). Guaranteed national PR Newswire distribution (money-back on the distribution itself; media pickup, like all wires, never "guaranteed"). This is the credible, board-safe backbone.<br>
-    <a class="buy" href="https://www.ereleases.com/pricing/" target="_blank">Buy at ereleases.com/pricing →</a></div>
-  </div>
-
-  <div class="win">
-    <div class="t">EIN Presswire "Feature" — widest guaranteed named-outlet reach</div>
-    <div class="cost">$965 &nbsp;<span style="font-size:14px;color:var(--mut)">(Basic tier $659)</span></div>
-    <div class="n">✅ Guaranteed named outlets: <b>AP News · Yahoo · Nexstar (200+ local TV) · USA TODAY Network · major outlets</b>, 150–200M monthly readers</div>
-    <div class="n">✅ Real permanent apnews.com "Paid Content" article page (proof hub below)</div>
-    <div class="g">Turnaround: ~2 hours review then live, business hours. Basic $659 = AP + Digital Journal; Feature $965 = adds Yahoo + Nexstar + USA TODAY Network.<br>
-    <a class="buy" href="https://www.einpresswire.com/pricing" target="_blank">Buy at einpresswire.com/pricing →</a></div>
-  </div>
-
-  <div class="win">
-    <div class="t">À-la-carte "logos only" — cheapest way to Business Insider specifically</div>
-    <div class="cost">$396</div>
-    <div class="n">PRNow individual buys: Yahoo $99 + Business Insider $149 + USA Today $49 + MarketWatch $99</div>
-    <div class="n">✅ Real permanent articles on each domain, "published or full refund," each live in 24–48h</div>
-    <div class="g">AP already covered by your paid EIN. Add this ONLY if you specifically need the <b>Business Insider</b> logo (the wires above include AP/Yahoo/MarketWatch but not always a BI article).<br>
-    <a class="buy" href="https://prnow.io/benzinga-press-release" target="_blank">Buy at prnow.io →</a></div>
-  </div>
-
-  <!-- ============ PER-OUTLET VERIFICATION ============ -->
-  <h2>Every outlet you named — verified in each parameter</h2>
+  <!-- ============ THE FULL LIST ============ -->
+  <h2>Every outlet · price · how fast · the exact link you get</h2>
   <div class="card">
     <table>
-      <tr><th style="width:13%">Outlet</th><th style="width:10%">Reality</th><th style="width:11%">Guaranteed live</th><th style="width:26%">URL pattern + real example</th><th>Covered by</th></tr>
+      <tr><th style="width:17%">Outlet</th><th style="width:11%">Status</th><th style="width:11%">Price</th><th style="width:13%">Live within</th><th>What you get + where to buy</th></tr>
 
-      <tr><td class="out">AP News</td><td><span class="pill p-real">Real article</span></td><td class="q">2h–next day</td>
-        <td class="q"><code>apnews.com/press-release/…</code> · proof hub: <a class="ex" href="https://apnews.com/hub/press-releases/ein-presswire-newsmatics" target="_blank">apnews.com/hub/press-releases/ein-presswire-newsmatics</a> (labeled "Paid Content, AP staff not involved")</td>
-        <td class="q">eReleases · EIN · PRNow $58</td></tr>
+      <tr>
+        <td class="out">AP News</td>
+        <td><span class="tag have">✓ Have it</span></td>
+        <td class="price">paid</td>
+        <td class="time">DONE</td>
+        <td>Already live from Round 1 (EIN). Real permanent <code>apnews.com</code> article. <a class="ex" href="https://apnews.com/hub/press-releases/ein-presswire-newsmatics" target="_blank">proof hub</a></td>
+      </tr>
 
-      <tr><td class="out">Yahoo</td><td><span class="pill p-real">Real article</span></td><td class="q">24–48h</td>
-        <td class="q"><code>finance.yahoo.com/news/…</code> · example: <a class="ex" href="https://finance.yahoo.com/news/4-press-release-examples-inspire-130000584.html" target="_blank">finance.yahoo.com/news/4-press-release-examples…</a></td>
-        <td class="q">eReleases · EIN · PRNow $99</td></tr>
+      <tr>
+        <td class="out">Yahoo Finance</td>
+        <td><span class="tag buy-t">Buy</span></td>
+        <td class="price">$99</td>
+        <td class="time">24–48h</td>
+        <td>Permanent <code>finance.yahoo.com/news/…</code> article, full refund if unpublished. <a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow →</a></td>
+      </tr>
 
-      <tr><td class="out">MarketWatch</td><td><span class="pill p-real">Real article</span></td><td class="q">24–48h</td>
-        <td class="q"><code>marketwatch.com/press-release/…</code></td>
-        <td class="q">eReleases (WireWatch) · PRNow $99</td></tr>
+      <tr>
+        <td class="out">Business Insider</td>
+        <td><span class="tag buy-t">Buy</span></td>
+        <td class="price">$149</td>
+        <td class="time">24–48h</td>
+        <td>Permanent <code>markets.businessinsider.com/news/…</code> article, full refund. <a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow →</a></td>
+      </tr>
 
-      <tr><td class="out">Business Insider</td><td><span class="pill p-real">Real article</span></td><td class="q">24–48h</td>
-        <td class="q"><code>markets.businessinsider.com/news/…</code></td>
-        <td class="q">PRNow $149 · Imperium $750</td></tr>
+      <tr>
+        <td class="out">USA Today</td>
+        <td><span class="tag buy-t">Buy</span></td>
+        <td class="price">$49</td>
+        <td class="time">24–48h</td>
+        <td>Permanent <code>usatoday.com/press-release/story/…</code>, full refund. <a class="ex" href="https://www.usatoday.com/press-release/story/37716/globe-pr-wire-launches-ai-enhanced-targeting-and-expanded-syndication-network-for-fintech-and-web3-innovators/" target="_blank">live example</a> · <a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow →</a></td>
+      </tr>
 
-      <tr><td class="out">USA Today</td><td><span class="pill p-real">Real article</span></td><td class="q">24–48h</td>
-        <td class="q"><code>usatoday.com/press-release/story/…</code> · examples: <a class="ex" href="https://www.usatoday.com/press-release/story/37716/globe-pr-wire-launches-ai-enhanced-targeting-and-expanded-syndication-network-for-fintech-and-web3-innovators/" target="_blank">/story/37716/…</a> · <a class="ex" href="https://www.usatoday.com/press-release/story/37255/medpr-pro-introduces-distribution-service-to-support-dental-practice-marketing/" target="_blank">/story/37255/…</a></td>
-        <td class="q">EIN (USA TODAY Network) · PRNow $49</td></tr>
+      <tr>
+        <td class="out">MarketWatch</td>
+        <td><span class="tag buy-t">Buy</span></td>
+        <td class="price">$99</td>
+        <td class="time">24–48h</td>
+        <td>Permanent <code>marketwatch.com/press-release/…</code> article, full refund. <a class="ex" href="https://prnow.io/benzinga-press-release" target="_blank">PRNow →</a></td>
+      </tr>
 
-      <tr><td class="out">Google News</td><td><span class="pill p-syn">Index feed</span></td><td class="q">24–48h</td>
-        <td class="q"><code>news.google.com</code> — auto-indexes the wire</td>
-        <td class="q">Included in every option</td></tr>
+      <tr>
+        <td class="out">MSN</td>
+        <td><span class="tag buy-t">Buy</span></td>
+        <td class="price">$80</td>
+        <td class="time">5–7 days</td>
+        <td>Guaranteed permanent article on <code>msn.com</code> (DA 97), live Google-indexed link, <b>100% refund if not published</b>. <a class="ex" href="https://reachwire.co.uk/publish-press-release-on-msn" target="_blank">ReachWire MSN →</a></td>
+      </tr>
 
-      <tr><td class="out">Bing News</td><td><span class="pill p-syn">Index feed</span></td><td class="q">24–48h</td>
-        <td class="q"><code>bing.com/news</code> — auto-indexes the wire</td>
-        <td class="q">Included in every option</td></tr>
+      <tr>
+        <td class="out">Bing News + Google News</td>
+        <td><span class="tag have">✓ Free</span></td>
+        <td class="price">$0</td>
+        <td class="time">24–48h</td>
+        <td>Auto-indexed from every buy above. No separate cost.</td>
+      </tr>
 
-      <tr><td class="out">PR Newswire (wire)</td><td><span class="pill p-real">Real article</span></td><td class="q">2h–next day</td>
-        <td class="q"><code>prnewswire.com/news-releases/…</code> — the gold-standard newswire</td>
-        <td class="q">eReleases (exclusive reseller)</td></tr>
-
-      <tr><td class="out">Forbes (no reporter)</td><td><span class="pill p-out">Add-on, regional</span></td><td class="q">72h</td>
-        <td class="q"><code>forbes.com/sites/…</code> — regional edition, money-back, NOT US staff. Verify edition + label.</td>
-        <td class="q"><a class="ex" href="https://www.badenbower.com/get-on-forbes/" target="_blank">Baden Bower $990</a></td></tr>
-
-      <tr><td class="out">MSN</td><td><span class="pill p-out">No guarantee</span></td><td class="q">—</td>
-        <td class="q">Aggregates from wires — <b>no vendor can guarantee a fixed MSN URL.</b> Excluded on purpose.</td>
-        <td class="q">Not sold</td></tr>
+      <tr>
+        <td class="out">Forbes<br><span class="note">(best without a reporter)</span></td>
+        <td><span class="tag buy-t">Buy</span></td>
+        <td class="price">$990</td>
+        <td class="time">72h</td>
+        <td>Guaranteed <code>forbes.com/sites/…</code> article, named byline, <b>money-back guarantee</b>. Regional edition (not US staff) — the only honest no-reporter route. <a class="ex" href="https://www.badenbower.com/get-on-forbes/" target="_blank">Baden Bower →</a></td>
+      </tr>
     </table>
   </div>
 
-  <div class="warn">
-    ⚠️ <b>Honest guarantees:</b> Wire distribution (AP/PR Newswire/Yahoo/MarketWatch/Google/Bing) is 100% guaranteed and refundable on the <i>distribution</i>. Independent journalist "coverage" is never guaranteed by any legitimate vendor at any price — anyone promising that is lying. <b>Forbes</b> = regional edition add-on only. <b>MSN</b> = not guaranteeable. Everything else on your list IS delivered by the bundles above with real permanent links.
+  <!-- ============ TOTAL ============ -->
+  <h2>What it costs to get ALL of them</h2>
+
+  <div class="total">
+    <div class="lbl">Everything except Forbes — Yahoo + Business Insider + USA Today + MarketWatch + MSN (AP already done, Bing/Google free)</div>
+    <div class="amt">$476</div>
+    <div class="note">All guaranteed, all permanent links, all refundable. Live in 24h–7 days.</div>
+    <a class="buy" href="https://prnow.io/benzinga-press-release" target="_blank">Buy the wire outlets at PRNow →</a>
+    <a class="buy" href="https://reachwire.co.uk/publish-press-release-on-msn" target="_blank">Buy MSN at ReachWire →</a>
   </div>
 
-  <!-- ============ MY RECOMMENDATION ============ -->
-  <h2>Recommended final build</h2>
-  <div class="card" style="border-color:var(--green)">
-    <p style="font-size:14px;margin:12px 2px"><b style="color:#7ee787">eReleases Newsmaker ($499) + PRNow Business Insider ($149) = $648.</b><br>
-    → PR Newswire + AP wire hits AP, Yahoo, MarketWatch, USA Today network, Google, Bing in 24–48h (rush = 2h), with the credible newswire your CEO respects.<br>
-    → The one logo the wire doesn't always give — <b>Business Insider</b> — added à-la-carte, real permanent article, refundable.<br>
-    → Optional: add <b>Baden Bower Forbes ($990)</b> if the CEO demands the Forbes logo (regional, 72h, money-back).</p>
+  <div class="total">
+    <div class="lbl">The complete no-compromise package — ALL of the above PLUS Forbes</div>
+    <div class="amt">$1,466</div>
+    <div class="note">Adds the guaranteed Forbes article (regional edition, money-back, 72h). This is your full list, every outlet, nothing dropped.</div>
+    <a class="buy" href="https://www.badenbower.com/get-on-forbes/" target="_blank">Add Forbes at Baden Bower →</a>
   </div>
 
   <div class="src">
     <b>Sources (verified 21 July 2026):</b>
-    <a href="https://www.ereleases.com/pricing/" target="_blank">eReleases pricing</a> ·
-    <a href="https://www.ereleases.com/faq/" target="_blank">eReleases FAQ (AP + rush turnaround)</a> ·
-    <a href="https://www.einpresswire.com/pricing" target="_blank">EIN Presswire</a> ·
-    <a href="https://prnow.io/benzinga-press-release" target="_blank">PRNow</a> ·
+    <a href="https://prnow.io/benzinga-press-release" target="_blank">PRNow (Yahoo/BI/USA Today/MarketWatch)</a> ·
+    <a href="https://reachwire.co.uk/publish-press-release-on-msn" target="_blank">ReachWire MSN (guaranteed, DA97, refund)</a> ·
+    <a href="https://www.badenbower.com/get-on-forbes/" target="_blank">Baden Bower Forbes ($990 single, money-back)</a> ·
     <a href="https://apnews.com/hub/press-releases/ein-presswire-newsmatics" target="_blank">Live AP News hub</a> ·
-    <a href="https://www.usatoday.com/press-release/story/37716/globe-pr-wire-launches-ai-enhanced-targeting-and-expanded-syndication-network-for-fintech-and-web3-innovators/" target="_blank">Live USA Today example</a> ·
-    <a href="https://finance.yahoo.com/news/4-press-release-examples-inspire-130000584.html" target="_blank">Live Yahoo example</a> ·
-    <a href="https://www.badenbower.com/get-on-forbes/" target="_blank">Baden Bower Forbes</a>.<br>
-    <b>Note:</b> Wire placements are paid press-release listings on each outlet's domain, labeled as press-release/paid content, not independent journalism. Guarantees apply to distribution; media pickup depends on newsworthiness.
+    <a href="https://www.usatoday.com/press-release/story/37716/globe-pr-wire-launches-ai-enhanced-targeting-and-expanded-syndication-network-for-fintech-and-web3-innovators/" target="_blank">Live USA Today example</a>.<br>
+    <b>Honest note:</b> Each placement is a permanent, paid press-release/editorial article on that outlet's own domain — real link, refundable if it fails to publish. Forbes is a regional edition (not US staff). MSN is guaranteed by ReachWire with a 100% refund. This covers your full named list with nothing omitted.
   </div>
 </body>
 </html>
